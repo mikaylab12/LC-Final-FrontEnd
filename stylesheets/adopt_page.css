@@ -478,7 +478,7 @@
         opacity: 0;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        /* justify-content: center; */
         align-items: center;
         padding: 8px 15px; 
 
