@@ -1,7 +1,7 @@
 const idStorage = window.localStorage
 
 let itemId = idStorage.getItem('id')
-let basket = JSON.parse(idStorage.getItem('cart'))
+let basket = JSON.parse(idStorage.getItem('basket'))
 
 function createBasket() {
     console.log(basket)

@@ -131,6 +131,39 @@
     z-index: 999;
 }
 
+.filter-button{
+    align-items: center;
+    cursor: pointer;
+    border: #6DB2A2 2px solid;
+    background: transparent;
+    color: #6DB2A2;
+    border-radius: 20px;
+    padding: 12px 20px;
+    font-size: 20px;
+    font-weight: 550;
+    margin: 25px;
+}
+
+.filter-button:hover{
+    border: #6DB2A2 2px solid;
+    transition: 30ms ease-in;
+    background: #6DB2A2;
+    color: white;
+}
+
+.all {
+    border: #6DB2A2 2px solid;
+    background: #6DB2A2;
+    color: white;
+}
+
+.all:hover{
+    border: #6DB2A2 2px solid;
+    transition: 30ms ease-in;
+    background: #6DB2A2; 
+    color: white;
+}
+
 .modal-content{
     background: rgba( 109, 178, 162, 1.00 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -232,6 +265,11 @@ input::placeholder {
     padding-bottom: 20px;
     display: flex;
     font-size: 20px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
 }
 
 .create-product {
@@ -1119,14 +1157,14 @@ input::placeholder {
     .filter-button{
         align-items: center;
         cursor: pointer;
-        border: #307473 2px solid;
+        border: #6DB2A2 2px solid;
         background: transparent;
-        color: #307473;
+        color: #6DB2A2;
         border-radius: 20px;
         padding: 12px 20px;
         font-size: 20px;
         font-weight: 550;
-        margin: 7px;
+        margin: 15px;
     }
 
     /* Navbar */

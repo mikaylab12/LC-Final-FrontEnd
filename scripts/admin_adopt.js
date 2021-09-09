@@ -17,7 +17,7 @@ fetch('https://my-final-project-backend.herokuapp.com/show-animals/')
     let productContainer = document.querySelector('#card-container')
     productContainer.innerHTML = "";
     data['data'].forEach(product => {
-        productContainer.innerHTML += ` <div class="one-preview">
+        productContainer.innerHTML += ` <div class="one-preview" techStack='${product[2]}'>
                                         <div class='preview_image'>
                                             <img src="${product[8]}" class="animal_image">
                                         </div>
@@ -35,7 +35,7 @@ fetch('https://my-final-project-backend.herokuapp.com/show-animals/')
                                                         <input type="text" id="animal_image" name="animal_image" placeholder="Image Link">
                                                     </form>
                                                     <div class="buttons">
-                                                    <button class="close-modal" onclick="closeModal()">Close</button>
+                                                        <button class="close-modal" onclick="closeModal()">Close</button>
                                                         <button type="submit" class="update-btn" onclick="updateAnimal(${product[0]})">Update</button>
                                                     </div>
                                             </div>
@@ -43,8 +43,8 @@ fetch('https://my-final-project-backend.herokuapp.com/show-animals/')
                                         <div class='product'>
                                             <h1 class="animal_id">${product[0]}.</h1>
                                             <h3 class="animal_name">${product[1]}</h3>
-                                            <h4 class="animal_breed">${product[2]}</h4>
-                                            <h5 class="animal_type">${product[3]}</h5>
+                                            <h4 class="animal_type">${product[2]}</h4>
+                                            <h5 class="animal_breed">${product[3]}</h5>
                                             <h6 class="animal_age">${product[4]}</h6>
                                             <h6 class="animal_gender">${product[5]}</h6>
                                             <p class="animal_price">R ${product[6]}<p> 
@@ -80,8 +80,8 @@ function openModal(id){
         console.log(data['data'][0])
         idStorage.setItem('animal_id', data['data'][0])
         document.getElementById('animal_name').value= `${data['data'][1]}`
-        document.getElementById('animal_breed').value= `${data['data'][2]}`
-        document.getElementById('animal_type').value= `${data['data'][3]}`
+        document.getElementById('animal_type').value= `${data['data'][2]}`
+        document.getElementById('animal_breed').value= `${data['data'][3]}`
         document.getElementById('animal_age').value= `${data['data'][4]}`
         document.getElementById('animal_gender').value= `${data['data'][5]}`
         document.getElementById('animal_price').value= `${data['data'][6]}`
@@ -209,5 +209,44 @@ function addAdoption(){
         alert("Adoption Animal added successfully.")
         window.location.reload()
     })
-        
 }
+
+// function to filter the animals by type 
+function filterAnimals(category) {
+    let animals = document.getElementsByClassName("one-preview");
+    let allButton = document.querySelector(".all")
+    const websiteGreen = '#307473';
+    if (category == "All") {
+      for (animal of animals) {
+        animal.style.display = "flex";
+        allButton.style.color = "white";
+        allButton.style.backgroundColor = websiteGreen;
+      }
+      return;
+    }
+    for (animal of animals) {
+      console.log(animal);
+      animal.style.display = "none";
+      allButton.style.color= websiteGreen;
+      allButton.style.backgroundColor = "transparent";
+      allButton.onMouseOver="this.style.color='white'";
+      allButton.onMouseOut="this.style.color='white'";
+      allButton.onMouseOver="this.style.backgroundColor='#307473'";
+      allButton.onMouseOut="this.style.backgroundColor='transparent'";
+      
+                        // onMouseOut="this.style.color='#307473'";
+                        // onMouseOver="this.style.backgroundColor='#307473'";
+                        
+
+    }
+    
+    let selectedAnimals = document.querySelectorAll(`[techStack='${category}']`);
+  
+    for (animal of selectedAnimals) {
+        animal.style.display = "flex";
+        allButton.style.color = websiteGreen;
+        allButton.style.backgroundColor = "transparent";
+        allButton.onMouseOver=".style.color='transparent'";
+        allButton.onMouseOver="this.style.backgroundColor='websiteGreen'";
+    }
+  }

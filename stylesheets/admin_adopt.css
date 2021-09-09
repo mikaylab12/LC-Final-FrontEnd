@@ -79,6 +79,30 @@
     display: none;
 }
 
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.filter-button{
+    align-items: center;
+    cursor: pointer;
+    border: #307473 2px solid;
+    background: transparent;
+    color: #307473;
+    border-radius: 20px;
+    padding: 12px 20px;
+    font-size: 20px;
+    font-weight: 550;
+    margin: 25px;
+}
+
+.filter-button:hover{
+    border: #307473 2px solid;
+    transition: 30ms ease-in;
+    background: #307473;
+    color: white;
+}
 
 /* Adoption Admin Page  */
 #adopt-preview{
@@ -1109,7 +1133,7 @@ input::placeholder {
         padding: 12px 20px;
         font-size: 20px;
         font-weight: 550;
-        margin: 7px;
+        margin: 15px;
     }
 
     /* Navbar */

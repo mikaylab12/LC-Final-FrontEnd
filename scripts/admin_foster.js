@@ -17,7 +17,7 @@ fetch('https://my-final-project-backend.herokuapp.com/show-foster/')
     let productContainer = document.querySelector('#card-container')
     productContainer.innerHTML = "";
     data['data'].forEach(product => {
-        productContainer.innerHTML += ` <div class="one-preview">
+        productContainer.innerHTML += ` <div class="one-preview" techStack='${product[2]}'>
                                         <div class='preview_image'>
                                             <img src="${product[7]}" class="animal_image">
                                         </div>
@@ -206,7 +206,40 @@ function addFoster(){
         alert("Foster Animal added successfully.")
         window.location.reload()
     })
-        
 }
 
-
+// function to filter 
+function filterAnimals(category) {
+    let animals = document.getElementsByClassName("one-preview");
+    let allButton = document.querySelector(".all")
+    const websiteGreen = '#6DB2A2';
+    if (category == "All") {
+      for (animal of animals) {
+        animal.style.display = "flex";
+        allButton.style.color = "white";
+        allButton.style.backgroundColor = websiteGreen;
+      }
+      return;
+    }
+    for (animal of animals) {
+      console.log(animal);
+      animal.style.display = "none";
+      allButton.style.color= websiteGreen;
+      allButton.style.backgroundColor = "transparent";
+      allButton.onMouseOver="this.style.color='white'";
+      allButton.onMouseOut="this.style.color='white'";
+      allButton.onMouseOver="this.style.backgroundColor='#6DB2A2'";
+      allButton.onMouseOut="this.style.backgroundColor='transparent'";
+    }
+    
+    let selectedAnimals = document.querySelectorAll(`[techStack='${category}']`);
+  
+    for (animal of selectedAnimals) {
+        animal.style.display = "flex";
+        allButton.style.color = websiteGreen;
+        allButton.style.backgroundColor = "transparent";
+        allButton.onMouseOver="this.style.color='white'";
+        allButton.onMouseOut="this.style.color='white'";
+        allButton.onMouseOver="this.style.backgroundColor= websiteGreen";
+        allButton.onMouseOut="this.style.backgroundColor='transparent'";
+    }}
