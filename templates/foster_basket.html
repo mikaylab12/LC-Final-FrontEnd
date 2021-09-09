@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    <title>Helping Paws Foster Basket</title>
+    <link rel="stylesheet" href="/stylesheets/foster_basket.css">
+</head>
+<body>
+    <!-- Nav Bar -->
+    <nav id="navbar">
+        <div class="logo">
+            <h1>helping paws <i class="fas fa-paw"></i></h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/templates/adopt_page.html"><i class="fas fa-heart heart"></i></a></li>
+            <li><a href="/templates/foster_page.html"><i class="fas fa-clinic-medical"></i></a></li>
+            <li><a href="/templates/donate_page.html"><i class="fas fa-donate"></i></a></li>
+            <li><a href="/templates/basket.html"><i class="fas fa-shopping-basket basket"></i></a></li>
+            <li><a href="/landing.html"><i class="fas fa-sign-out-alt"></i></a></li>
+        </ul>
+        <button class="navbar-menu" onclick="toggleSideNavbar()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+     <!-- Side Nav Bar  -->
+     <nav id="sideNavbar">
+        <div>
+          <ul class="sideNavbar-links">
+            <h1 class="heading">Helping Paws<i class="fas fa-paw"></i></h1>
+            <li class="sideNavbar-link"><a href="/templates/adopt_page.html"><i class="fas fa-heart heart"></i></a></li>
+            <li class="sideNavbar-link"><a href="/templates/foster_page.html"><i class="fas fa-clinic-medical medical"></i></a></li>
+            <li class="sideNavbar-link"><a href="/templates/donate_page.html"><i class="fas fa-donate donate donate"></i></a></li>
+            <li class="sideNavbar-link"><a href="/templates/basket.html"><i class="fas fa-shopping-basket basket"></i></a></li>
+            <li class="sideNavbar-link"><a href="/landing.html"><i class="fas fa-sign-out-alt sign-out sign-out"></i></a></li>
+          </ul>
+        </div>
+    </nav>
+    <!-- Foster Basket Page  -->
+    <div class="border"></div>
+    <div id="foster-basket">
+        <div class="headings">
+            <h2 class="basket-heading">Foster Basket</h2>
+            <p>Below are the incredible animals that you have requested to foster.</p>
+        </div>
+        <div class="foster-checkoutPage">
+            <div id="foster-checkout-container"></div>
+            <div class="foster-buttons">
+                <!-- <li><a href="/templates/adopt_page.html" class="button" >Checkout</a></li> -->
+                <button class="button" onclick="fosterCheckout()">Checkout</button>
+            </div>
+        </div>
+    </div>
+    <div class="border"></div>
+    <!-- Bottom Navbar  -->
+   <div id="bottom-navbar">
+        <div class="bottom-navigation">
+            <h4>Navigation:</h4>
+            <ul class="bottom-links">
+                <li><a href="/templates/adopt_page.html"><i class="fas fa-heart heart"></i>Adopt</a></li>
+                <li><a href="/templates/foster_page.html"><i class="fas fa-clinic-medical foster"></i>Foster</a></li>
+                <li><a href="/templates/donate_page.html"><i class="fas fa-donate"></i>Donate</a></li>
+                <li><a href="/templates/basket.html"><i class="fas fa-shopping-basket"></i>Basket</a></li>
+                <li><a href="/landing.html"><i class="fas fa-sign-out-alt"></i>Sign Out</a></li>
+            </ul>
+        </div>
+        <div class="bottom-social">
+            <h4>Contact:</h4>
+            <a href="mailto:mikayladummy2@gmail.com?"><i class="fas fa-envelope"></i>mikayladummy2@gmail.com</a>
+            <a href="https://www.instagram.com/mikaylabeelders/" target="_blank"><i class="fab fa-instagram-square"></i>mikaylabeelders</a>
+            <li><i class="fas fa-phone"></i>(+27)82 688 9551</li>
+        </div>
+    </div>
+    <!-- Footer  -->
+    <footer id="footer">
+        <div class="footer-content">
+            <h5>Helping Paws <i class="fas fa-paw"></i><i class="far fa-copyright"></i> - Adopt, don't just shop</h5>
+            <p>NPO-326 846 | NPC-2021/108776/08 | PB-6509 65398</p>
+        </div>
+    </footer>
+
+    <script src="/scripts/navbar.js"></script>
+    <script src="/scripts/foster_basket.js"></script>
+
+    <script>
+        AOS.init();
+      </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://kit.fontawesome.com/76a522a414.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</body>
+</html>

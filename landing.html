@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/landing.css">
+    <title>Helping Paws</title>
+</head>
+<body>
+    <!-- Nav Bar -->
+    <nav id="navbar">
+        <div class="logo">
+            <h1>helping paws <i class="fas fa-paw"></i></h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/landing.html"><i class="fas fa-home home"></i></a></li>
+            <li><a href="/templates/about.html"><i class="fas fa-info about"></i></a></li>
+            <li><a href="/templates/preview.html"><i class="fas fa-paw"></i></a></li>
+            <li><a href="/templates/contact.html"><i class="fas fa-phone contact"></i></a></li>
+            <li><a href="/templates/sign-in.html"><i class="fas fa-sign-in-alt"></i></a></li>
+        </ul>
+        <button class="navbar-menu" onclick="toggleSideNavbar()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+    <!-- Side Nav Bar  -->
+    <nav id="sideNavbar">
+        <div>
+          <ul class="sideNavbar-links">
+            <h1 class="heading">Helping Paws<i class="fas fa-paw"></i></h1>
+            <li class="sideNavbar-link"><a href="/landing.html"><i class="fas fa-home home"></i></a></li>
+            <li class="sideNavbar-link"><a href="/templates/about.html"><i class="fas fa-info about"></i></a></li>
+            <li class="sideNavbar-link"><a href="/templates/preview.html"><i class="fas fa-paw"></i></a></li>
+            <li class="sideNavbar-link"><a href="/templates/contact.html"><i class="fas fa-phone contact"></i></a></li>
+            <li class="sideNavbar-link"><a href="/templates/sign-in.html"><i class="fas fa-sign-in-alt"></i></a></li>
+          </ul>
+        </div>
+      </nav>
+    <!-- Landing Page -->
+    <div id="landing-page">
+        <div class="landing-content">
+            <h2>Adopt Today!</h2>
+            <p>Assist us in finding loving homes for our friends!</p>
+            <div class="landing-btns">
+                <a href="/templates/sign-in.html"><button>Adopt</button></a>
+                <a href="/templates/sign-in.html"><button>Donate</button></a>
+            </div>
+        </div>
+    </div>
+    <!-- Involvement Page -->
+    <div id="involvement">
+        <div class="border"></div>
+        <div class="involvement-container">
+            <h2>Get Involved</h2>
+            <p>There are 3 ways to get involved with our loving animals:</p>
+            <div class="involvement-cards">
+                <div class="adopt-card">
+                    <img src="/images/faw-adopt-button-1-300x300.png" alt="Picture of adoption">
+                    <h3>Adopt</h3>
+                    <p>Adoption is our first and main priority. Finding loving homes for our amazing stars is a necessity.</p>
+                    <a href="/templates/sign-in.html"><button>Adopt</button></a>
+                </div>
+                <div class="donate-card">
+                    <img src="/images/faw-donate-button.png" alt="Picture of donate">
+                    <h3>Donate</h3>
+                    <p>Donating is another option available to the community. Majority of those who are unable to adopt our furry friends, tend to offer a donation in order to increase the level of care given to each animal.</p>
+                    <a href="/templates/sign-in.html"><button>Donate</button></a>
+                </div>
+                <div class="foster-card">
+                    <img src="/images/faw-volunteer-button.png" alt="Picture of volunteer">
+                    <h3>Foster</h3>
+                    <p>Fostering is the act of temporarily looking after one or more of our loving animals until they are able to land a loving and permamnent home.</p>
+                    <a href="/templates/sign-in.html"><button>Foster</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="border"></div>
+    </div>
+    <!-- Customer Reviews -->
+    <div id="reviews">
+        <div class="reviews-content">
+            <h2>Our Reviews</h2>
+            <p>Here are a few reviews from our clients:</p>
+        </div>
+        <div class="owl-carousel">
+            <div class="review">
+                <img src="/images/cool-profile-pic-matheus-ferrero.jpeg" alt="Picture of customer">
+                <div class="words">
+                    <h3>Elaina Schwartz</h3>
+                    <h4>Foster</h4>
+                    <span><i class="fas fa-paw rating"></i> <i class="fas fa-paw rating"></i> <i class="fas fa-paw rating"></i> <i class="fas fa-paw rating"></i> <i class="fas fa-paw rating"></i></span> 
+                    <q>It is an amazing opportunity being able to foster animals. I've had the priviledge of looking after various animals until they find a stable house.</q>
+                </div>
+            </div>
+            <div class="review">
+                <img src="/images/photo-1564564321837-a57b7070ac4f.jpeg" alt="Picture of customer">
+                <div class="words">
+                    <h3>Martyn Brandt</h3>
+                    <h4>Adopt</h4>
+                    <span><i class="fas fa-paw rating"></i> <i class="fas fa-paw rating"></i> <i class="fas fa-paw rating"></i> <i class="fas fa-paw rating"></i> <i class="fas fa-paw rating"></i></span> 
+                    <q>I am so happy my bestfriend, Jack, that i managed to adopt. He has impacted my life tremendously and I wish I met him sooner, but rather later than never!</q>
+                </div>
+            </div>
+            <div class="review">
+                <img src="/images/89366325-cheerful-young-woman-dancing-over-red-background-african-female-model-dancing-in-studio-and-enjoying.jpeg" alt="Picture of customer">
+                <div class="words">
+                    <h3>Arfa Houghton</h3>
+                    <h4>Donate</h4>
+                    <span><i class="fas fa-paw rating"></i> <i class="fas fa-paw rating"></i> <i class="fas fa-paw rating"></i> <i class="fas fa-paw rating"></i> <i class="fas fa-paw "></i></span> 
+                    <q>I am unable to adopt animals at this moment in time so for the time being, I donate funds to try and assist these homeless furbabies.</q>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bottom Navbar  -->
+    <div id="bottom-navbar">
+        <div class="bottom-navigation">
+            <h4>Navigation:</h4>
+            <ul class="bottom-links">
+                <li><a href="/landing.html"><i class="fas fa-home home"></i>Home</a></li>
+                <li class="bottom_about"><a href="/templates/about.html"><i class="fas fa-info "></i>  About</a></li>
+                <li><a href="/templates/preview.html"><i class="fas fa-paw"></i>Animals</a></li>
+                <li><a href="/templates/contact.html"><i class="fas fa-phone"></i>Contact</a></li>
+                <li><a href="/templates/sign-in.html"><i class="fas fa-sign-in-alt"></i>Sign In</a></li>
+            </ul>
+        </div>
+        <div class="bottom-social">
+            <h4>Contact:</h4>
+            <a href="mailto:mikayladummy2@gmail.com?"><i class="fas fa-envelope"></i>mikayladummy2@gmail.com</a>
+            <a href="https://www.instagram.com/mikaylabeelders/" target="_blank"><i class="fab fa-instagram-square"></i>mikaylabeelders</a>
+            <li><i class="fas fa-phone"></i>(+27)82 688 9551</li>
+        </div>
+    </div>
+    <!-- Footer  -->
+    <footer id="footer">
+        <div class="footer-content">
+            <h5>Helping Paws <i class="fas fa-paw"></i><i class="far fa-copyright"></i> - Adopt, don't just shop</h5>
+            <p>NPO-326 846 | NPC-2021/108776/08 | PB-6509 65398</p>
+        </div>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+    <script src="/scripts/navbar.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://kit.fontawesome.com/76a522a414.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+          $(".owl-carousel").owlCarousel({
+            items: 1,
+            // margin: 30,
+            loop: true,
+            stagePadding: 0,
+            dots: false,
+            responsive: {
+              0: {
+                items: 1,
+                stagePadding: 0,
+                margin: 10,
+              },
+              500: {
+                items: 1,
+                margin: 50,
+                stagePadding: 10,
+              },
+              800: {
+                items: 1.5,
+                margin: 80,
+                stagePadding: 40,
+              },
+            },
+            autoplay: true,
+          });
+        });
+      </script>
+</body>
+</html>

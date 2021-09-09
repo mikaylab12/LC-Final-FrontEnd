@@ -1,0 +1,758 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    text-transform: capitalize;
+}
+
+/* Nav bar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background: #A9F0D1;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.logo {
+    font-size: 25px;
+    margin-left: 80px;
+    color: #6DB2A2;
+    width: max-content;
+    text-shadow: #307473 1px 3px 3px;
+}
+
+.logo h1 {
+    width: max-content;
+}
+
+.logo i {
+    width: max-content;
+    color: #307473;
+    text-shadow: #307473 1px 1px 3px;
+}
+
+.nav-links{
+    display: flex;
+    font-size: 30px;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 20px;
+    color: #6DB2A2; 
+    justify-content: flex-end;
+}
+
+.nav-links a{
+    text-decoration: none;
+    list-style-type: none;
+    color: #6DB2A2; 
+}
+
+.nav-links li {
+    text-decoration: none;
+    margin-right: 65px;
+}
+
+.nav-links i:hover{
+    color: #307473;
+    /* color: #A9F0D1; */
+    /* color: #6DB2A2; */
+}
+
+.donate {
+    color: #307473;
+    /* color: #A9F0D1; */
+}
+
+.nav-links a {
+    text-decoration: none;
+}
+
+#sideNavbar {
+  display: none;
+}
+
+.navbar-menu{
+    display: none;
+}
+
+/* Donate Page  */
+#donate-page{
+    background-image: url(/images/5b44e574f485ed38fca7dccc89f55367.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.donate-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 60vw;
+    margin-right: 65px;
+    
+    /* border: black 2px solid; */
+}
+
+.certificate-email {
+    display: flex;
+    max-width: 40vw;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 70px;
+    /* margin-right: 35px; */
+
+}
+
+.certificate-email a, p{
+    text-decoration: none;
+    font-size: 20px;
+    color: #6DB2A2; 
+    font-weight: 600;
+    /* padding: 5px 20px; */
+    text-transform: initial;
+    font-family: 'Poppins', sans-serif;
+    /* text-align: center;  */
+    
+}
+
+.certificate-email a{
+    color: #307473;
+    font-weight: 800;
+}
+
+.certificate-email a:hover{
+    color: #A9F0D1;
+}
+
+.donate-content h2{
+    color: #307473;
+    font-size: 60px;
+    font-weight: 600;
+    padding: 5px 20px;
+    justify-content: center;
+    align-self: center;
+}
+
+.donate-content p , h3{
+    font-size: 20px;
+    color: #6DB2A2; 
+    font-weight: 600;
+    padding: 5px 20px;
+    text-transform: initial;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+
+#adopted{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.adopted-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin-top: 0;
+}
+
+#adopted h2{
+    color: #307473;
+    font-size: 60px;
+    font-weight: 600;
+    padding: 5px 20px;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+}
+
+#adopted p{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    color: #6DB2A2; 
+    font-weight: 600;
+    padding: 5px 20px;
+    text-transform: initial;
+    text-align: center;
+    align-self: center;
+}
+
+.border {
+    background-image: url(/images/5862504-100-free-paw-print-dog-images-pixabay-paw-print-no-background-680_340_preview.png);
+    background-size: contain;
+    height: 80vh;
+}
+
+.adopted-words {
+    margin-bottom: 15px;
+}
+
+.owl-carousel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 10px; */
+    height: 70vh;
+    background: transparent;
+    max-width: 93vw;
+    padding: 25px;
+    border-radius: 10px;
+    /* margin-left: 24%; */
+    /* justify-self: center; */
+    background: #A9F0D1;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-bottom: 20px;
+}
+
+.owl-stage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),
+      url(/images/iPhone-Aesthetic-Wallpaper.jpeg); */
+    background:transparent;
+    padding: 20px;
+    height: 30vh;
+    /* margin-left: 3%; */
+    
+}
+
+.animal{
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    max-height: 30vh;
+    /* padding: 20px; */
+    /* margin: 10px; */
+    object-fit: cover;
+}
+
+.animal img {
+    object-fit: cover;
+    position: top;
+    height: 200px;
+
+}
+
+/* bottom navbar */
+#bottom-navbar {
+    background-color: #A9F0D1;
+    height: 35vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    font-family: monospace;
+}
+
+.bottom-navigation{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: flex-start; */
+    font-size: 22px;
+    color: #6DB2A2;
+}
+
+.bottom-navigation i {
+    color: #6DB2A2;
+    padding: 5px 10px;
+    margin-right: 15px;
+    justify-self: flex-start;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.bottom-navigation ul{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.bottom-navigation h4 {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 15px;
+}
+
+.bottom-navigation a , .bottom-navigation li{
+    text-decoration: none;
+    color: #6DB2A2;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.bottom-social{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 22px;
+    color: #6DB2A2;
+    margin-top: 30px;
+}
+
+.bottom-social i {
+    color: #6DB2A2;
+    padding: 5px 10px;
+    margin-right: 15px;
+    justify-self: center;
+}
+
+.bottom-social a {
+    text-decoration: none;
+    color: #6DB2A2;
+    text-transform: initial;
+}
+
+.bottom-social h4 {
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+.bottom-social li{
+    text-decoration: none;
+    list-style: none;
+}
+
+/* footer */
+#footer {
+    background-color: #183A3A;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    color: #A9F0D1;
+    text-align: center;
+    font-size: 16px;
+}
+
+.footer-content h5 {
+    font-size: 18px;
+}
+
+.footer-content p {
+    font-family: monospace;
+}
+
+@media screen and (max-width: 1200px){
+    body{
+        width: 100%;
+    }
+
+    /* Donate Page  */
+    #donate-page{
+        background-image: url(/images/5b44e574f485ed38fca7dccc89f55367.jpeg);
+        background-size: cover;
+        background-position: bottom;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .donate-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        width: max-content;
+        margin-right: 0px;
+        /* padding-bottom: 80px; */
+        margin-top: 25px;
+    }
+
+    .donate-content p {
+        width: max-content;
+    }
+
+    .certificate-email {
+        display: flex;
+        width: 20vw;
+        justify-content: center;
+        text-align: center;
+        align-items: flex-end;
+        margin: 5px;
+        /* margin-top: 260px; */
+        /* padding-top: 180px; */
+        /* margin-right: 35px; */
+
+    }
+
+    .certificate-email a, p{
+        text-decoration: none;
+        font-size: 18px;
+        color: #6DB2A2; 
+        font-weight: 600;
+        /* padding: 5px 20px; */
+        text-transform: initial;
+        font-family: 'Poppins', sans-serif;
+        /* text-align: center;  */
+        
+    }
+
+    .certificate-email a{
+        color: #307473;
+        font-weight: 800;
+    }
+
+    .certificate-email a:hover{
+        color: #A9F0D1;
+    }
+
+    .donate-content h2{
+        color: #307473;
+        font-size: 50px;
+        font-weight: 600;
+        padding: 5px 20px;
+        justify-content: center;
+        align-self: center;
+        /* width: max-content; */
+    }
+
+    #adopted{
+        display: flex;
+        flex-direction: column;
+        height: 115vh;
+    }
+
+    .adopted-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: max-content;
+        margin-top: 0;
+    }
+
+    #adopted h2{
+        color: #307473;
+        font-size: 50px;
+        font-weight: 600;
+        padding: 5px 20px;
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+        /* width: max-content; */
+    }
+
+    #adopted p{
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-size: 20px;
+        color: #6DB2A2; 
+        font-weight: 600;
+        padding: 5px 20px;
+        text-transform: initial;
+        text-align: center;
+        align-self: center;
+    }
+
+    .border {
+        background-image: url(/images/5862504-100-free-paw-print-dog-images-pixabay-paw-print-no-background-680_340_preview.png);
+        background-size: contain;
+        height: 80vh;
+    }
+
+    .adopted-words {
+        margin-bottom: 15px;
+    }
+
+    .owl-carousel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding-top: 10px; */
+        height: max-content;
+        background: transparent;
+        width: 93vw;
+        padding: 25px;
+        border-radius: 10px;
+        /* margin-left: 24%; */
+        /* justify-self: center; */
+        background: #A9F0D1;
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 8.5px );
+        -webkit-backdrop-filter: blur( 8.5px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        margin-bottom: 20px;
+    }
+
+    .owl-stage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),
+        url(/images/iPhone-Aesthetic-Wallpaper.jpeg); */
+        background:transparent;
+        padding: 20px;
+        height: 30vh;
+        /* margin-left: 3%; */
+        
+    }
+
+    .animal{
+        display: flex;
+        flex-direction: row;
+        border-radius: 20px;
+        max-height: 30vh;
+        /* padding: 20px; */
+        /* margin: 10px; */
+        object-fit: cover;
+    }
+
+    .animal img {
+        object-fit: cover;
+        position: top;
+        height: 200px;
+
+    }
+
+    /* Navbar */
+    #navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh;
+        width: 100%;
+    }
+    
+    h1{
+        width: max-content;
+    }
+    
+    .logo {
+        font-size: 120%;
+        margin-left: 3%;
+        align-self: center;
+        /* max-width: 100vw; */
+        white-space: nowrap;
+    }
+    
+    .logo i {
+        align-self: center;
+        width: max-content;
+    }
+    
+    .nav-links{
+        display: none;
+    }
+        
+    .navbar-menu {
+        /* height: 100%; */
+        outline: none;
+        border: none;
+        background-color: transparent;
+        padding: 0px;
+        color: #6DB2A2;
+        /* position: fixed; */
+        font-family: monospace;
+        /* top: 35%; */
+        /* right: 0; */
+        margin-right:3%;
+        z-index: 9999999;
+        font-size: 28px;
+        /* padding: 0px; */
+        display: flex;
+        justify-content: flex-end;
+        align-self: center;
+    }
+        
+    .navbar-menu:hover {
+        color: #307473;
+    }
+        
+    #sideNavbar {
+        max-width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        /* left: 50%; */
+        font-family: monospace;
+    }
+    
+    .sideNavbar-links {
+        top: 100%;
+        right: -100%;
+        /* position: relative; */
+        color: white;
+        background: #6DB2A2;
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 8.5px );
+        -webkit-backdrop-filter: blur( 8.5px );
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        width: 200px;
+        height: 100%;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        list-style-type: none;
+        transition: all 0.5s linear;
+        padding-bottom: 30px;
+        z-index: 100;
+        font-family: monospace;
+    }
+
+    .heading {
+        font-size: 130%;
+        width: 200px;
+        /* top: 0; */
+        padding-bottom: 30px;
+        color: #A9F0D1;
+        text-shadow: #307473 1px 3px 3px;
+        align-self: center;
+        /* position: fixed; */
+    }
+
+    .heading i {
+        color: #307473;
+    }
+    
+    .sideNavbar-link {
+        box-sizing: border-box;
+        border-bottom: 1px solid #A9F0D1;
+        width: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        font-size: 170%;
+        justify-content: space-evenly;
+        align-self: center;
+        /* margin: -2px 50px; */
+    }
+
+    .sideNavbar-link i {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 0;
+    }
+    
+    .sideNavbar-link a{
+        text-decoration: none;
+        color: #A9F0D1;
+        margin: 30px 100px;
+        width: 200px;
+        font-family: monospace;
+    }
+
+    .sideNavbar-link a:hover{
+        color: #183A3A;
+    }
+
+    .sideNavbar-link li, i {
+        width: max-content;;
+        font-family: monospace;
+        /* position: fixed; */
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .sideNavbar-links.active {
+        top: 0;
+        right: 3%;
+        z-index: 100;
+    }
+
+    /* bottom navbar */
+    #bottom-navbar {
+        background-color: #A9F0D1;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: monospace;
+    }
+    
+    .bottom-navigation{
+        display: none;
+    }
+    
+    .bottom-navigation ul{
+        list-style-type: none;
+        text-decoration: none;
+    }
+    
+    .bottom-social{
+        display: flex;
+        margin-top: 0;
+        /* flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+        font-size: 22px;
+        color: #6DB2A2;
+    }
+    
+    .bottom-links i {
+        padding-right: 0;
+    }
+
+    /* footer */
+    #footer {
+        background-color: #183A3A;
+        height: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-content {
+        color: #A9F0D1;
+        text-align: center;
+        font-size: 90%;
+    }
+
+    .footer-content h5{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 90%;
+        width: 90%;
+    }
+
+    .footer-content i {
+        width: max-content;
+    }
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/donate_page.css">
+    <title>Helping Paws Donation Page</title>
+</head>
+<body>
+     <!-- Nav Bar -->
+     <nav id="navbar">
+        <div class="logo">
+            <h1>helping paws <i class="fas fa-paw"></i></h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/templates/adopt_page.html"><i class="fas fa-heart heart"></i></a></li>
+            <li><a href="/templates/foster_page.html"><i class="fas fa-clinic-medical"></i></a></li>
+            <li><a href="/templates/donate_page.html"><i class="fas fa-donate donate"></i></a></li>
+            <li><a href="/templates/basket.html"><i class="fas fa-shopping-basket basket"></i></a></li>
+            <li><a href="/landing.html"><i class="fas fa-sign-out-alt"></i></a></li>
+        </ul>
+        <button class="navbar-menu" onclick="toggleSideNavbar()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+    <!-- Side Nav Bar  -->
+    <nav id="sideNavbar">
+        <div>
+          <ul class="sideNavbar-links">
+            <h1 class="heading">Helping Paws<i class="fas fa-paw"></i></h1>
+            <li class="sideNavbar-link"><a href="/templates/adopt_page.html"><i class="fas fa-heart heart"></i></a></li>
+            <li class="sideNavbar-link"><a href="/templates/foster_page.html"><i class="fas fa-clinic-medical medical"></i></a></li>
+            <li class="sideNavbar-link"><a href="/templates/donate_page.html"><i class="fas fa-donate donate donate"></i></a></li>
+            <li class="sideNavbar-link"><a href="/templates/basket.html"><i class="fas fa-shopping-basket basket"></i></a></li>
+            <li class="sideNavbar-link"><a href="/landing.html"><i class="fas fa-sign-out-alt sign-out sign-out"></i></a></li>
+          </ul>
+        </div>
+    </nav>
+    <!-- Donate Page  -->
+    <div id="donate-page">
+        <div class="donate-content">
+            <h2>Banking Details</h2>
+            <h3>Helping Paws</h3>
+            <p>Nedbank Bank</p>
+            <p>Account Number: 170 123 456 78</p>
+            <p>Branch Code: 198765</p>
+        </div>
+        <div class="certificate-email"><p>Should you wish to receive a tax certificate for your donation, please email: <a href="mailto:mikayladummy2@gmail.com?subject=Tax Certificate">mikayladummy2@gmail.com</a></p></div>
+    </div>
+    <!-- Adopted Animals  -->
+    <div id="adopted">
+        <div class="border"></div>
+        <div class="adopted-content">
+            <div class="adopted-words">
+                <h2>Adopted Animals</h2>
+                <p>Below are the images of some of our friends that have already being adopted but not forgotten!</p>
+            </div>
+            <div class="owl-carousel">
+                <div class="animal">
+                    <img src="/images/Male-Cat-and-Kitten-for-Adoption.jpeg" alt="">
+                </div>
+                <div class="animal">
+                    <img src="/images/images (2).jpeg" alt="">
+                </div>
+                <div class="animal">
+                    <img src="/images/Male-Cats-and-Kittens-for-Adoption.jpeg" alt="">
+                </div>
+                <div class="animal">
+                    <img src="/images/2020-03-20-e-lee-philadelphia-morris-animal-refuge-3-768x512.jpeg" alt="">
+                </div>
+                <div class="animal">
+                    <img src="/images/images.jpeg" alt="">
+                </div>
+                <div class="animal">
+                    <img src="/images/adoption-tips-smartypaws.jpeg" alt="">
+                </div>
+                <div class="animal">
+                    <img src="/images/19379411_web1_IMG_8277.jpeg" alt="">
+                </div>
+                <div class="animal">
+                    <img src="/images/15-Best-Pet-Friendly-Hotels-in-America-5.jpeg" alt="">
+                </div>
+                <div class="animal">
+                    <img src="/images/Female-Cats-and-Kittens-for-Adoption.jpeg" alt="">
+                </div>
+                <div class="animal">
+                    <img src="/images/DSC_1549_800x.webp" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="border"></div>
+    </div>
+    <!-- Bottom Navbar  -->
+    <div id="bottom-navbar">
+        <div class="bottom-navigation">
+            <h4>Navigation:</h4>
+            <ul class="bottom-links">
+                <li><a href="/templates/adopt_page.html"><i class="fas fa-heart heart"></i>Adopt</a></li>
+                <li><a href="/templates/foster_page.html"><i class="fas fa-clinic-medical foster"></i>Foster</a></li>
+                <li><a href="/templates/donate_page.html"><i class="fas fa-donate"></i>Donate</a></li>
+                <li><a href="/templates/basket.html"><i class="fas fa-shopping-basket"></i>Basket</a></li>
+                <li><a href="/landing.html"><i class="fas fa-sign-out-alt"></i>Sign Out</a></li>
+            </ul>
+        </div>
+        <div class="bottom-social">
+            <h4>Contact:</h4>
+            <a href="mailto:mikayladummy2@gmail.com?"><i class="fas fa-envelope"></i>mikayladummy2@gmail.com</a>
+            <a href="https://www.instagram.com/mikaylabeelders/" target="_blank"><i class="fab fa-instagram-square"></i>mikaylabeelders</a>
+            <li><i class="fas fa-phone"></i>(+27)82 688 9551</li>
+        </div>
+    </div>
+    <!-- Footer  -->
+    <footer id="footer">
+        <div class="footer-content">
+            <h5>Helping Paws <i class="fas fa-paw"></i><i class="far fa-copyright"></i> - Adopt, don't just shop</h5>
+            <p>NPO-326 846 | NPC-2021/108776/08 | PB-6509 65398</p>
+        </div>
+    </footer>
+
+    <script src="/scripts/navbar.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://kit.fontawesome.com/76a522a414.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+          $(".owl-carousel").owlCarousel({
+            items: 1,
+            // margin: 30,
+            loop: true,
+            stagePadding: 0,
+            dots: false,
+            responsive: {
+              0: {
+                items: 1,
+                stagePadding: 10,
+                margin: 20,
+              },
+              500: {
+                items: 1,
+                margin: 50,
+                stagePadding: 10,
+              },
+              800: {
+                items: 4,
+                margin: 20,
+                stagePadding: 10,
+              },
+            },
+            autoplay: true,
+          });
+        });
+      </script>
+</body>
+</html>

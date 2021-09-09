@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/about.css">
+    <title>About Helping Paws</title>
+</head>
+<body>
+     <!-- Navbar -->
+     <nav id="navbar">
+        <div class="logo">
+            <h1>helping paws <i class="fas fa-paw"></i></h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/landing.html"><i class="fas fa-home home"></i></a></li>
+            <li><a href="/templates/about.html"><i class="fas fa-info about"></i></a></li>
+            <li><a href="/templates/preview.html"><i class="fas fa-paw"></i></a></li>
+            <li><a href="/templates/contact.html"><i class="fas fa-phone contact"></i></a></li>
+            <li><a href="/templates/sign-in.html"><i class="fas fa-sign-in-alt"></i></a></li>
+        </ul>
+        <button class="navbar-menu" onclick="toggleSideNavbar()">
+            <i class="fas fa-bars"></i>
+          </button>
+    </nav>
+    <!-- Side Nav Bar  -->
+    <nav id="sideNavbar">
+        <div>
+          <ul class="sideNavbar-links">
+            <h1 class="heading">Helping Paws<i class="fas fa-paw"></i></h1>
+            <li class="sideNavbar-link"><a href="/landing.html"><i class="fas fa-home home"></i></a></li>
+            <li class="sideNavbar-link"><a href="/templates/about.html"><i class="fas fa-info about"></i></a></li>
+            <li class="sideNavbar-link"><a href="/templates/preview.html"><i class="fas fa-paw"></i></a></li>
+            <li class="sideNavbar-link"><a href="/templates/contact.html"><i class="fas fa-phone contact"></i></a></li>
+            <li class="sideNavbar-link"><a href="/templates/sign-in.html"><i class="fas fa-sign-in-alt"></i></a></li>
+          </ul>
+         </div>
+        </div>
+      </nav>
+    <!-- About Page -->
+    <div id="about-page">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Helping Paws was founded in August 2021 with its main aim being able to rescue , aid as well as find loving and promising homes for those animals in need. Our organization has a goal to sterilize as many cats and dogs as possible in the Western Cape to ensure a better future for that animal. </p>
+            <p>Helping Paws was founded by Mikayla Beelders, a young lady with a massive passion for helping animals. Helping Paws is controlled by the idea that every single animal deserves a better chance at life and thus resulting in our organization standing up for these animals to the best of our ability. </p>
+            <p>Helping Paws’ mission is to educate pet owners to give their lovely pets the life that they deserve!</p>
+        </div>
+    </div>
+    <!-- Partners / Sponsors  -->
+    <div id="partners">
+        <div class="border"></div>
+        <div class="partners-content">
+            <div class="partners-words">
+                <h2>Our Partners</h2>
+                <p>Below are the logos of our sponsors:</p>
+            </div>
+            <div class="owl-carousel">
+                <div class="sponsor belina">
+                    <img src="/images/belina.jpeg" alt="">
+                </div>
+                <div class="sponsor lifechoices">
+                    <img src="/images/lifechoices-services-8.jpeg" alt="">
+                </div>
+                <div class="sponsor nedbank">
+                    <img src="/images/nedbank.png" alt="">
+                </div>
+                <div class="sponsor kc_pet">
+                    <img src="/images/kc pet.png" alt="">
+                </div>
+                <div class="sponsor promina">
+                    <img src="/images/promina.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="border"></div>
+    </div>
+    <!-- Bottom Navbar  -->
+    <div id="bottom-navbar">
+        <div class="bottom-navigation">
+            <h4>Navigation:</h4>
+            <ul class="bottom-links">
+                <li><a href="/landing.html"><i class="fas fa-home home"></i>Home</a></li>
+                <li class="bottom_about"><a href="/templates/about.html"><i class="fas fa-info "></i>  About</a></li>
+                <li><a href="/templates/preview.html"><i class="fas fa-paw"></i>Animals</a></li>
+                <li><a href="/templates/contact.html"><i class="fas fa-phone"></i>Contact</a></li>
+                <li><a href="/templates/sign-in.html"><i class="fas fa-sign-in-alt"></i>Sign In</a></li>
+            </ul>
+        </div>
+        <div class="bottom-social">
+            <h4>Contact:</h4>
+            <a href="mailto:mikayladummy2@gmail.com?"><i class="fas fa-envelope"></i>mikayladummy2@gmail.com</a>
+            <a href="https://www.instagram.com/mikaylabeelders/" target="_blank"><i class="fab fa-instagram-square"></i>mikaylabeelders</a>
+            <li><i class="fas fa-phone"></i>(+27)82 688 9551</li>
+        </div>
+    </div>
+    <!-- Footer  -->
+    <footer id="footer">
+        <div class="footer-content">
+            <h5>Helping Paws <i class="fas fa-paw"></i><i class="far fa-copyright"></i> - Adopt, don't just shop</h5>
+            <p>NPO-326 846 | NPC-2021/108776/08 | PB-6509 65398</p>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+      </script>
+      <script src="/scripts/navbar.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://kit.fontawesome.com/76a522a414.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+          $(".owl-carousel").owlCarousel({
+            items: 1,
+            // margin: 30,
+            loop: true,
+            stagePadding: 0,
+            dots: false,
+            responsive: {
+              0: {
+                items: 1,
+                stagePadding: 0,
+                margin: 0,
+              },
+              500: {
+                items: 1,
+                margin: 0,
+                stagePadding: 0,
+              },
+              800: {
+                items: 3,
+                margin: 10,
+                stagePadding: 0,
+              },
+            },
+            autoplay: true,
+          });
+        });
+      </script>
+</body>
+</html>
