@@ -36,7 +36,7 @@ fetch('https://my-final-project-backend.herokuapp.com/show-users/')
                                                         <input type="text" id="username-${product[0]}" name="username" placeholder="Username">
                                                         <input type="text" id="password-${product[0]}" name="password" placeholder="Password">
                                                     </form>
-                                                    <div class="buttons">
+                                                    <div class="modal-buttons">
                                                     <button class="close-modal" onclick="closeModal()">Close</button>
                                                         <button type="submit" class="update-btn" onclick="updateUser(${product[0]})">Update</button>
                                                     </div>
