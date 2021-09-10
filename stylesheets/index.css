@@ -561,9 +561,10 @@
 
     .landing-btns button:hover {
         transition: 30ms ease-in;
+        background-color: #307473;
+        color: white;
         border: #307473 2px solid;
-        background: transparent;
-        color: #307473;
+        
     }
     
     #involvement{
