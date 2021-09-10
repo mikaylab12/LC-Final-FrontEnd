@@ -18,10 +18,10 @@ function close(){
 document.body.addEventListener("click", navbar)
 
 function navbar(event) {
-    console.log(event.clientX)
+    // console.log(event.clientX)
 
     if (event.clientX < (window.innerWidth/2)){
-        console.log(12)
+        // console.log(12)
         document
       .getElementsByClassName("sideNavbar-links")[0]
       .classList.remove("active");

@@ -153,8 +153,7 @@ function deleteUser(userID){
     })
 }
 
-// Admin User 
-
+// Admin User functions
 // function to show products 
 fetch('https://my-final-project-backend.herokuapp.com/show-admin/')
 .then(res => res.json())

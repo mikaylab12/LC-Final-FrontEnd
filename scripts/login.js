@@ -1,4 +1,4 @@
-// Login Function for users 
+// Login function for users 
 let entry_token = window.localStorage.getItem("jwt-token")
 let form = document.getElementById('form')
 
@@ -39,14 +39,3 @@ form.addEventListener("submit", function (event){
     
    
 })
-
-// function submitForm(event) {
-//     event.preventDefault();
-//     login();
-// }
-
-// form.addEventListener("submit", submitForm);
-
-
-
-// if localStorage == "null"

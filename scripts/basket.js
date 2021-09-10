@@ -12,6 +12,8 @@ function createBasket() {
     basketContainer .innerHTML = ''
     if (idStorage['basket'] == null){
         basketContainer .innerHTML = '<h2 class="results">There are no items in your basket.</h2>'
+    }else if (basket.length === 0){
+        basketContainer .innerHTML = '<h2 class="results">There are no items in your basket.</h2>'
     }else{
     basket.forEach(product => {
     basketContainer .innerHTML += `<div class = 'basketProduct'>
@@ -39,17 +41,13 @@ function removeItem(e){
     let itemname = e.target.id
     console.log(itemname)
     let basketContainer = document.querySelector('#checkout-container')[0]
-    for (let  item in basket){
+    for (let item in basket){
         if (itemname == basket[item]['name']){
             basket.splice(item, 1)
             idStorage['basket'] = JSON.stringify(basket)
             console.log(idStorage.getItem('basket'))
             createBasket()
         }
-    }
-    if ((idStorage['basket'].length === 0)){
-        basketContainer.innerHTML += ''
-        basketContainer.innerHTML += '<h2 class="results">There are no items in your basket.</h2>'
     }
     basketTotal()
 }
@@ -90,7 +88,7 @@ function adoptionCheckout(){
     .then(res => res.json())
     .then(res => {
         console.log(res);
-        alert("Email has been sent successfully.")
+        alert("An email has been sent to you with the neccessary details!")
         idStorage.removeItem('basket')
         // console.log(idStorage)
         console.log("Basket cleared")

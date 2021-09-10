@@ -8,7 +8,7 @@ if (JSON.parse(myStorage.getItem('foster-basket'))){
 
 }
 
-// function to show preview of thse available for fostering  
+// function to show preview of those available for fostering  
 fetch('https://my-final-project-backend.herokuapp.com/show-foster/')
 .then(res => res.json())
 .then(data =>{
@@ -61,14 +61,10 @@ function fosterAddToBasket(id){
         object['image'] = data['data'][7];
         object['name'] = data['data'][1];
         object['age'] = data['data'][4]
-        // object['quantity'] = parseInt(quantity);
-        // object['totalprice'] =  parseInt(data['data'][0][2]);
         console.log(object);
         for (let item in fosterBasket){
             console.log(item)
             if (object['name'] == fosterBasket[item]['name']){
-                // fosterBasket[item]['quantity'] += object['quantity'];
-                // fosterBasket[item]['totalprice'] += object['totalprice'];
                 console.log(fosterBasket)
                 myStorage.setItem('foster-basket', JSON.stringify(fosterBasket))
                 fosterStorage.setItem('id', data['data'][0])
@@ -85,7 +81,7 @@ function fosterAddToBasket(id){
 }
 
 
-// function to filter 
+// function to filter animals
 function filterAnimals(category) {
     let animals = document.getElementsByClassName("one-preview2");
     let allButton = document.querySelector(".all")

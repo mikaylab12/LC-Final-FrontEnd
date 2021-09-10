@@ -81,8 +81,6 @@ function addToBasket(id){
         object['image'] = data['data'][8];
         object['name'] = data['data'][1];
         object['price'] = data['data'][6]
-        // object['quantity'] = parseInt(quantity);
-        // object['totalprice'] =  parseInt(data['data'][0][2]);
         console.log(object);
         for (let item in basket){
             console.log(item)
@@ -99,7 +97,7 @@ function addToBasket(id){
         basket = basket.concat(object)
         console.log(basket)
         myStorage.setItem('basket', JSON.stringify(basket))
-        alert('Item added to basket successfully')
+        alert('Animal has been added to your basket successfully')
     })
 }
 

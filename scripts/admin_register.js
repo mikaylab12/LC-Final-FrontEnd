@@ -1,5 +1,6 @@
 let form = document.getElementById("form")
 
+// function to register as admin user 
 form.addEventListener("submit", function (event){
     event.preventDefault()
     fetch('https://my-final-project-backend.herokuapp.com/register-admin/', {

@@ -4,7 +4,6 @@ fetch('https://my-final-project-backend.herokuapp.com/show-animals/')
 .then(data =>{
     console.log(data)
 
-
     let productContainer = document.querySelector('#card-container')
     productContainer.innerHTML = "";
     data['data'].forEach(product => {
@@ -35,12 +34,11 @@ function signIn(){
     window.location.href='sign-in.html'
 }
 
-// function to show preview of thse available for fostering  
+// function to show preview of those available for fostering  
 fetch('https://my-final-project-backend.herokuapp.com/show-foster/')
 .then(res => res.json())
 .then(data =>{
     console.log(data)
-
 
     let productContainer = document.querySelector('#foster-container')
     productContainer.innerHTML = "";

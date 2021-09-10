@@ -7,7 +7,7 @@ const idStorage = window.localStorage
 //     cart = JSON.parse(myStorage.getItem('cart'))
 // }
 
-// function to show products 
+// function to show adoption animals
 fetch('https://my-final-project-backend.herokuapp.com/show-animals/')
 .then(res => res.json())
 .then(data =>{
@@ -58,7 +58,7 @@ fetch('https://my-final-project-backend.herokuapp.com/show-animals/')
 })
 })
 
-// funtion to open update modal
+// funtion to view single animal profile for adoption
 function openModal(id){
     let modalBtn = document.getElementsByClassName("btn-1")
     for(let i = 0; i < modalBtn.length; i++){
@@ -103,7 +103,7 @@ function closeModal() {
     })
 }
 
-// function to update animal
+// function to update adoption animal
 function updateAnimal(){
     // let userID = document.querySelector("#user_number").value
     // console.log(animalID)
@@ -135,7 +135,7 @@ function updateAnimal(){
         
 }
 
-// function to delete animal
+// function to delete adoption animal
 function deleteAnimal(animalID){
     fetch(`https://my-final-project-backend.herokuapp.com/delete-animal/${animalID}`, {
         method: 'GET',
@@ -211,7 +211,7 @@ function addAdoption(){
     })
 }
 
-// function to filter the animals by type 
+// function to filter the adoption animals by type 
 function filterAnimals(category) {
     let animals = document.getElementsByClassName("one-preview");
     let allButton = document.querySelector(".all")
@@ -233,11 +233,6 @@ function filterAnimals(category) {
       allButton.onMouseOut="this.style.color='white'";
       allButton.onMouseOver="this.style.backgroundColor='#307473'";
       allButton.onMouseOut="this.style.backgroundColor='transparent'";
-      
-                        // onMouseOut="this.style.color='#307473'";
-                        // onMouseOver="this.style.backgroundColor='#307473'";
-                        
-
     }
     
     let selectedAnimals = document.querySelectorAll(`[techStack='${category}']`);

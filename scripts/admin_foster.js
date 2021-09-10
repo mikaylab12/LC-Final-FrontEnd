@@ -7,7 +7,7 @@ if (JSON.parse(myStorage.getItem('cart'))){
     cart = JSON.parse(myStorage.getItem('cart'))
 }
 
-// function to show products 
+// function to show foster animals
 fetch('https://my-final-project-backend.herokuapp.com/show-foster/')
 .then(res => res.json())
 .then(data =>{
@@ -56,8 +56,7 @@ fetch('https://my-final-project-backend.herokuapp.com/show-foster/')
 })
 })
 
-// function to filter 
-
+// function to view single foster animal profile
 function openModal(id){
     let modalBtn = document.getElementsByClassName("btn-1")
     for(let i = 0; i < modalBtn.length; i++){
@@ -102,7 +101,7 @@ function closeModal() {
     })
 }
 
-// function to update animal
+// function to update foster animal
 function updateAnimal(){
     // let userID = document.querySelector("#user_number").value
     // console.log(animalID)
@@ -134,7 +133,7 @@ function updateAnimal(){
         
 }
 
-// function to delete animal
+// function to delete foster animal
 function deleteAnimal(animalID){
     fetch(`https://my-final-project-backend.herokuapp.com/delete-foster/${animalID}`, {
         method: 'GET',
@@ -146,7 +145,7 @@ function deleteAnimal(animalID){
     .then(res => res.json())
     .then(res => {
         console.log(res);
-        alert("Animal deleted successfully.")
+        alert("Foster animal deleted successfully.")
         window.location.reload()
     })
 }
@@ -203,12 +202,12 @@ function addFoster(){
     .then(res => res.json())
     .then(res => {
         console.log(res);
-        alert("Foster Animal added successfully.")
+        alert("Foster animal added successfully.")
         window.location.reload()
     })
 }
 
-// function to filter 
+// function to filter foster animals
 function filterAnimals(category) {
     let animals = document.getElementsByClassName("one-preview");
     let allButton = document.querySelector(".all")

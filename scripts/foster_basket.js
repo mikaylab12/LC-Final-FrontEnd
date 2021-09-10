@@ -33,11 +33,6 @@ createBasket()
         console.log(e.target.id)
         let itemname = e.target.id
         console.log(itemname)
-        // let quantityInputs = document.getElementsByClassName('basketProduct-quantity-input')
-        // for(let i = 0; i < quantityInputs.length; i++){
-        //     let input = quantityInputs[i]
-        //     input.addEventListener('change', quantityChange)
-        // }
         for (let  item in basket){
             if (itemname == basket[item]['name']){
                 basket.splice(item, 1)
@@ -74,7 +69,7 @@ function fosterCheckout(){
     .then(res => res.json())
     .then(res => {
         console.log(res);
-        alert("Email has been sent successfully.")
+        alert("An email has been sent to you with the neccessary details!")
         window.location.href='adopt_page.html'
         // localStorage.clear()
     })

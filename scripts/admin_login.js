@@ -31,7 +31,5 @@ form.addEventListener("submit", function (event){
             window.location="admin_users.html"
         }
     });
-    
-   
 });
 
