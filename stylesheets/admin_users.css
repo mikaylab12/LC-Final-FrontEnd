@@ -1014,7 +1014,7 @@ input::placeholder {
 
     .modal-content{
         width: 90%;
-        height: 90%;
+        height: 95%;
         z-index: 1;
         margin-top: 2.5vh;
     }
@@ -1023,6 +1023,7 @@ input::placeholder {
         max-height: 100vh;
         margin: 0;
     }
+
     .modal-form{
         display: flex;
         flex-direction: column;
@@ -1047,7 +1048,7 @@ input::placeholder {
         padding-bottom: 0px;
         display: flex;
         flex-direction: row;
-        
+
         font-size: 18px;
     }
 
