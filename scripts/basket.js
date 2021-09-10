@@ -67,12 +67,29 @@ function basketTotal(){
 
 }
 
+// function to view user
+fetch(`https://my-final-project-backend.herokuapp.com/view-profile/${id}/`)
+    .then(res => res.json())
+    .then(data =>{
+        console.log(data)
+        idStorage.setItem('user_number', data['data'][0][0])
+        document.getElementById('user_id').value= `${data['data'][0][1]}`
+        document.getElementById('first_name').value= `${data['data'][0][2]}`
+        document.getElementById('last_name').value= `${data['data'][0][3]}`
+        idStorage.setItem('email_address')= `${data['data'][0][4]}`
+        idStorage.setItem('contact_number')= `${data['data'][0][5]}`
+        idStorage.setItem('username').value= `${data['data'][0][6]}`
+        document.getElementById('password').value= `${data['data'][0][7]}`
+        console.log(`${data['data'][0][6]}`, `${data['data'][0][7]}`)
+    })  
+
 // function to checkout - Adoption
 function adoptionCheckout(){
     fetch(`https://my-final-project-backend.herokuapp.com/adopt-checkout/`, {
         method: 'POST',
         body: JSON.stringify({
-            'email_address': idStorage.getItem('email_address'),
+            'email_address': idStorage['email_address'],
+            // idStorage.setItem('user_number', data['data'][0][0]),
             'contact_number': idStorage.getItem('contact_number'),
             'username': idStorage.getItem('username'),
         }),

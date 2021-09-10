@@ -116,7 +116,6 @@ function updateUser(){
             "contact_number": document.getElementById("contact_number").value,
             "username": document.getElementById("username").value,
             "password": document.getElementById("password").value,
-            
         }),
         headers: {
             'Content-Type' : 'application/json',
