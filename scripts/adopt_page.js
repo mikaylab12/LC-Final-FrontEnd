@@ -1,18 +1,40 @@
 const myStorage = window.localStorage
 const idStorage = window.localStorage
+const userDetails = JSON.parse(myStorage['user'])
 
 let basket = []
+
 
 if (JSON.parse(myStorage.getItem('basket'))){
     basket = JSON.parse(myStorage.getItem('basket'))
 }
+
+function getUserDetails(){
+    fetch(`https://my-final-project-backend.herokuapp.com/user-profile/${userDetails.username}/${userDetails.password}`,{
+        method:'PATCH'
+    })
+            .then(res => res.json())
+            .then(data =>{
+                console.log(data)
+                myStorage.setItem('user-details', JSON.stringify(data.data))
+                console.log(myStorage)
+            }) 
+}
+
+// let userdata = JSON.parse(myStorage['userdetails'])
+
+getUserDetails()
 
 // function to show products 
 fetch('https://my-final-project-backend.herokuapp.com/show-animals/')
 .then(res => res.json())
 .then(data =>{
     console.log(data)
-
+    console.log(data.data[0][1])
+    myStorage.setItem('animal-name' , data.data[0][1])
+    myStorage.setItem('animal-type' , data.data[0][2])
+    myStorage.setItem('animal-breed' , data.data[0][3])
+    myStorage.setItem('animal-price' , data.data[0][6])
 
     let productContainer = document.querySelector('#card-container')
     productContainer.innerHTML = "";

@@ -1,7 +1,9 @@
 const fosterStorage = window.localStorage
+const myStorage = window.localStorage
 
 let itemId = fosterStorage.getItem('id')
 let basket = JSON.parse(fosterStorage.getItem('foster-basket'))
+let userdata = JSON.parse(myStorage['user-details'])
 
 function createBasket() {
     console.log(basket)
@@ -56,9 +58,13 @@ function fosterCheckout(){
     fetch(`https://my-final-project-backend.herokuapp.com/foster-checkout/`, {
         method: 'POST',
         body: JSON.stringify({
-            'email_address': idStorage.getItem('email_address'),
-            'contact_number': idStorage.getItem('contact_number'),
-            'username': idStorage.getItem('username'),
+            'email_address': userdata[0][4],
+            'contact_number': userdata[0][5],
+            'username': userdata[0][6],
+            'animal_name': fosterStorage.getItem('animal-name'),
+            'animal_type': fosterStorage.getItem('animal-type'),
+            'animal_breed': fosterStorage.getItem('animal-breed'),
+            'animal_age': fosterStorage.getItem('animal-age'),
         }),
         headers: {
             'Content-Type' : 'application/json',
@@ -70,7 +76,7 @@ function fosterCheckout(){
         console.log(res);
         alert("Email has been sent successfully.")
         window.location.href='adopt_page.html'
-        localStorage.clear()
+        // localStorage.clear()
     })
         
 }

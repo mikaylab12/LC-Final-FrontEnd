@@ -13,7 +13,10 @@ fetch('https://my-final-project-backend.herokuapp.com/show-foster/')
 .then(res => res.json())
 .then(data =>{
     console.log(data)
-
+    fosterStorage.setItem('animal-name' , data.data[0][1])
+    fosterStorage.setItem('animal-type' , data.data[0][2])
+    fosterStorage.setItem('animal-breed' , data.data[0][3])
+    fosterStorage.setItem('animal-age' , data.data[0][4])
 
     let productContainer = document.querySelector('#foster-container')
     productContainer.innerHTML = "";

@@ -1,4 +1,5 @@
 const idStorage = window.localStorage
+const myStorage = window.localStorage
 let users = []
 let admins = []
 // let cart = []
@@ -60,6 +61,7 @@ fetch('https://my-final-project-backend.herokuapp.com/show-users/')
 
 // function to open update modal
 function openModal(id){
+    myStorage.setItem('user-number', id)
     let modalBtn = document.getElementsByClassName("btn-1")
     for(let i = 0; i < modalBtn.length; i++){
         let button = modalBtn[i]
@@ -74,22 +76,22 @@ function openModal(id){
             modal.classList.remove("update-modal-active")
         })
     }
-    fetch(`https://my-final-project-backend.herokuapp.com/view-profile/${id}/`)
+    fetch(`https://my-final-project-backend.herokuapp.com/view-profile/${myStorage.getItem('user-number')}/`)
     .then(res => res.json())
     .then(data =>{
         console.log(data['data'][0][0])
-        idStorage.setItem('user_number', data['data'][0][0])
-        document.getElementById('user_id').value= `${data['data'][0][1]}`
-        document.getElementById('first_name').value= `${data['data'][0][2]}`
-        document.getElementById('last_name').value= `${data['data'][0][3]}`
-        document.getElementById('email_address').value= `${data['data'][0][4]}`
-        document.getElementById('contact_number').value= `${data['data'][0][5]}`
-        document.getElementById('username').value= `${data['data'][0][6]}`
-        document.getElementById('password').value= `${data['data'][0][7]}`
+        console.log(data);
+        myStorage.setItem('user_number', `${data['data'][0][0]}`)
+        document.getElementById(`user_id-${data['data'][0][0]}`).value= data['data'][0][1]
+        document.getElementById(`first_name-${data['data'][0][0]}`).value= data['data'][0][2]
+        document.getElementById(`last_name-${data['data'][0][0]}`).value= data['data'][0][3]
+        document.getElementById(`email_address-${data['data'][0][0]}`).value= data['data'][0][4]
+        document.getElementById(`contact_number-${data['data'][0][0]}`).value= data['data'][0][5]
+        document.getElementById(`username-${data['data'][0][0]}`).value= data['data'][0][6]
+        document.getElementById(`password-${data['data'][0][0]}`).value= data['data'][0][7]
         console.log(`${data['data'][0][6]}`, `${data['data'][0][7]}`)
     })  
 }
-
 
 // function to close modal
 function closeModal() {
@@ -106,16 +108,16 @@ function closeModal() {
 function updateUser(){
     // let userID = document.querySelector("#user_number").value
     // console.log(userID)
-    fetch(`https://my-final-project-backend.herokuapp.com/edit-user/${idStorage.getItem('user_id')}/`, {
+    fetch(`https://my-final-project-backend.herokuapp.com/edit-user/${myStorage.getItem('user-number')}/`, {
         method: 'PUT',
         body: JSON.stringify({
-            "user_id": document.getElementById("user_id").value,
-            "first_name": document.getElementById("first_name").value,
-            "last_name": document.getElementById("last_name").value,
-            "email_address": document.getElementById("email_address").value,
-            "contact_number": document.getElementById("contact_number").value,
-            "username": document.getElementById("username").value,
-            "password": document.getElementById("password").value,
+            "user_id": document.getElementById(`user_id-${myStorage.getItem('user-number')}`).value,
+            "first_name": document.getElementById(`first_name-${myStorage.getItem('user-number')}`).value,
+            "last_name": document.getElementById(`last_name-${myStorage.getItem('user-number')}`).value,
+            "email_address": document.getElementById(`email_address-${myStorage.getItem('user-number')}`).value,
+            "contact_number": document.getElementById(`contact_number-${myStorage.getItem('user-number')}`).value,
+            "username": document.getElementById(`username-${myStorage.getItem('user-number')}`).value,
+            "password": document.getElementById(`password-${myStorage.getItem('user-number')}`).value,
         }),
         headers: {
             'Content-Type' : 'application/json',
@@ -124,6 +126,7 @@ function updateUser(){
     })
     .then(res => res.json())
     .then(res => {
+        console.log(myStorage.getItem('user-number'))
         console.log(res);
         alert("User updated successfully.")
         window.location.reload()
@@ -151,10 +154,6 @@ function deleteUser(userID){
 }
 
 // Admin User 
-
-const myStorage = window.localStorage
-
-// let cart2 = []
 
 // function to show products 
 fetch('https://my-final-project-backend.herokuapp.com/show-admin/')
@@ -230,13 +229,13 @@ function openAdminModal(adminID){
     .then(data =>{
         console.log(data['data'][0])
         idStorage.setItem('admin_number', data['data'][0])
-        document.getElementById('admin_id').value= `${data['data'][1]}`
-        document.getElementById('admin_name').value= `${data['data'][2]}`
-        document.getElementById('admin_surname').value= `${data['data'][3]}`
-        document.getElementById('admin_email').value= `${data['data'][4]}`
-        document.getElementById('admin_contact').value= `${data['data'][5]}`
-        document.getElementById('admin_username').value= `${data['data'][6]}`
-        document.getElementById('admin_password').value= `${data['data'][7]}`
+        document.getElementById(`admin_id-${data['data'][0]}`).value= data['data'][1]
+        document.getElementById(`admin_name-${data['data'][0]}`).value= data['data'][2]
+        document.getElementById(`admin_surname-${data['data'][0]}`).value= data['data'][3]
+        document.getElementById(`admin_email-${data['data'][0]}`).value= data['data'][4]
+        document.getElementById(`admin_contact-${data['data'][0]}`).value= data['data'][5]
+        document.getElementById(`admin_username-${data['data'][0]}`).value= data['data'][6]
+        document.getElementById(`admin_password-${data['data'][0]}`).value= data['data'][7]
         console.log(`${data['data'][6]}`, `${data['data'][7]}`)
     })  
 }
@@ -260,13 +259,13 @@ function updateAdminUser(){
     fetch(`https://my-final-project-backend.herokuapp.com/edit-admin/${myStorage.getItem('admin_number')}/`, {
         method: 'PUT',
         body: JSON.stringify({
-            "admin_id": document.getElementById("admin_id").value,
-            "admin_name": document.getElementById("admin_name").value,
-            "admin_surname": document.getElementById("admin_surname").value,
-            "admin_email": document.getElementById("admin_email").value,
-            "admin_contact": document.getElementById("admin_contact").value,
-            "admin_username": document.getElementById("admin_username").value,
-            "admin_password": document.getElementById("admin_password").value,
+            "admin_id": document.getElementById(`admin_id-${myStorage.getItem('admin_number')}`).value,
+            "admin_name": document.getElementById(`admin_name-${myStorage.getItem('admin_number')}`).value,
+            "admin_surname": document.getElementById(`admin_surname-${myStorage.getItem('admin_number')}`).value,
+            "admin_email": document.getElementById(`admin_email-${myStorage.getItem('admin_number')}`).value,
+            "admin_contact": document.getElementById(`admin_contact-${myStorage.getItem('admin_number')}`).value,
+            "admin_username": document.getElementById(`admin_username-${myStorage.getItem('admin_number')}`).value,
+            "admin_password": document.getElementById(`admin_password-${myStorage.getItem('admin_number')}`).value,
             
         }),
         headers: {
@@ -301,21 +300,21 @@ function deleteAdminUser(adminID){
 };
 
 // function to open add modal in mobile responsiveness 
-let modalAddBtn2 = document.querySelector(".create-product2")
-let addModal2 = document.querySelector(".add-modal")
-let modalAddClose2 = document.querySelector(".add-close-modal")
+// let modalAddBtn2 = document.querySelector(".create-product2")
+// let addModal2 = document.querySelector(".add-modal")
+// let modalAddClose2 = document.querySelector(".add-close-modal")
 
-modalAddBtn2.addEventListener('click', function(){
-    addModal2.classList.add("add-modal-active")
-    document.querySelectorAll('.one-preview').forEach(product => product.style.zIndex = -1)
-    document.querySelector('#sideNavbar').style.visibility = 'hidden'
-})
+// modalAddBtn2.addEventListener('click', function(){
+//     addModal2.classList.add("add-modal-active")
+//     document.querySelectorAll('.one-preview').forEach(product => product.style.zIndex = -1)
+//     document.querySelector('#sideNavbar').style.visibility = 'hidden'
+// })
 
-modalAddClose2.addEventListener('click', function(){
-    addModal2.classList.remove("add-modal-active")
-    document.querySelectorAll('.one-preview').forEach(product => product.style.zIndex = 'initial')
-    document.querySelector('#sideNavbar').style.visibility = 'initial'
-})
+// modalAddClose2.addEventListener('click', function(){
+//     addModal2.classList.remove("add-modal-active")
+//     document.querySelectorAll('.one-preview').forEach(product => product.style.zIndex = 'initial')
+//     document.querySelector('#sideNavbar').style.visibility = 'initial'
+// })
 
 // search function
 function searchUsers() {

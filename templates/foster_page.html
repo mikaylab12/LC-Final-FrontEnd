@@ -32,7 +32,7 @@
             <li><a href="/templates/foster_page.html"><i class="fas fa-clinic-medical foster"></i></a></li>
             <li><a href="/templates/donate_page.html"><i class="fas fa-donate"></i></a></li>
             <li><a href="/templates/basket.html"><i class="fas fa-shopping-basket"></i></a></li>
-            <li><a href="/index.html"><i class="fas fa-sign-out-alt"></i></a></li>
+            <li onclick="signOut()"><a href="/index.html"><i class="fas fa-sign-out-alt"></i></a></li>
         </ul>
         <button class="navbar-menu" onclick="toggleSideNavbar()">
             <i class="fas fa-bars"></i>
@@ -47,7 +47,7 @@
             <li class="sideNavbar-link"><a href="/templates/foster_page.html"><i class="fas fa-clinic-medical foster"></i></a></li>
             <li class="sideNavbar-link"><a href="/templates/donate_page.html"><i class="fas fa-donate donate donate"></i></a></li>
             <li class="sideNavbar-link"><a href="/templates/basket.html"><i class="fas fa-shopping-basket basket"></i></a></li>
-            <li class="sideNavbar-link"><a href="/index.html"><i class="fas fa-sign-out-alt sign-out sign-out"></i></a></li>
+            <li class="sideNavbar-link" onclick="signOut()"><a href="/index.html"><i class="fas fa-sign-out-alt sign-out sign-out"></i></a></li>
           </ul>
         </div>
     </nav>
@@ -80,7 +80,7 @@
                 <li><a href="/templates/foster_page.html"><i class="fas fa-clinic-medical foster"></i>Foster</a></li>
                 <li><a href="/templates/donate_page.html"><i class="fas fa-donate"></i>Donate</a></li>
                 <li><a href="/templates/basket.html"><i class="fas fa-shopping-basket"></i>Basket</a></li>
-                <li><a href="/index.html"><i class="fas fa-sign-out-alt"></i>Sign Out</a></li>
+                <li onclick="signOut()"><a href="/index.html"><i class="fas fa-sign-out-alt"></i>Sign Out</a></li>
             </ul>
         </div>
         <div class="bottom-social">
@@ -100,6 +100,7 @@
 
     <script src="/scripts/navbar.js"></script>
     <script src="/scripts/foster_page.js"></script>
+    <script src="/scripts/sign-out.js"></script>
     <script>
         AOS.init();
       </script>

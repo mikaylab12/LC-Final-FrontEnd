@@ -19,7 +19,7 @@ form.addEventListener("submit", function (event){
     }
     }).then(res => res.json())
     .then(data => {
-        console.log(data)
+        // console.log(data)
         myStorage = window.localStorage
         if (data['message'] == "Please enter valid credentials."){
             alert("Error, This is not a valid login in!")
@@ -29,6 +29,9 @@ form.addEventListener("submit", function (event){
         }
         else if (data['status_code'] == 400){
             alert("Error, Please enter a valid contact number consisting of 10 digits.")
+        }
+        else if (data['status_code'] == 404){
+            alert("Error, Please note that this username exists already.")
         }
         else if (data['message'] == "Please enter a valid email address."){
             alert("Error, Please enter a valid email address.")

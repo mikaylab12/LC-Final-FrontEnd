@@ -751,6 +751,7 @@ input::placeholder {
 .results{
     color: #307473;
     padding: 20px;
+    text-align: center;
 }
 
 .admin-btn-1{
@@ -1159,7 +1160,7 @@ input::placeholder {
     }
 
     .admin_username, .username {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     /* Admin modal and users */

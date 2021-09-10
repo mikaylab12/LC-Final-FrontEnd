@@ -34,6 +34,9 @@ form.addEventListener("submit", function (event){
         else if (data['status_code'] == 401){
             alert("Error, Please enter a valid ID consisting of digits only.")
         }
+        else if (data['status_code'] == 404){
+            alert("Error, Please note that this username exists already.")
+        }
         else if (data['message'] == "Please enter a valid email address."){
             alert("Error, Please enter a valid email address.")
         }

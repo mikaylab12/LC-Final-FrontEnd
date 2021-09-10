@@ -222,6 +222,12 @@
     padding: 0px 20px;
 }
 
+.results{
+    color: #307473;
+    padding: 20px;
+    text-align: center;
+}
+
 .border {
     background-image: url(/images/5862504-100-free-paw-print-dog-images-pixabay-paw-print-no-background-680_340_preview.png);
     background-size: contain;
@@ -602,6 +608,9 @@
         transition: 5ms;
     }
 
+    .basket-total{
+        font-size: 20px;
+    }
 
     /* Parent Container */
     .foster_image {
