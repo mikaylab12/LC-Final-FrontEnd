@@ -60,9 +60,6 @@ fetch('https://my-final-project-backend.herokuapp.com/show-animals/')
 })
 })
 
-// function to filter 
-
-
 // function to add to basket
 function addToBasket(id){
     let object = {}
@@ -101,7 +98,7 @@ function addToBasket(id){
     })
 }
 
-
+// function to filter adoption animals
 function filterAnimals(category) {
     let animals = document.getElementsByClassName("one-preview");
     let allButton = document.querySelector(".all")
@@ -123,11 +120,6 @@ function filterAnimals(category) {
       allButton.onMouseOut="this.style.color='white'";
       allButton.onMouseOver="this.style.backgroundColor='#307473'";
       allButton.onMouseOut="this.style.backgroundColor='transparent'";
-      
-                        // onMouseOut="this.style.color='#307473'";
-                        // onMouseOver="this.style.backgroundColor='#307473'";
-                        
-
     }
     
     let selectedAnimals = document.querySelectorAll(`[techStack='${category}']`);

@@ -11,9 +11,9 @@ function createBasket() {
     let basketContainer = document.querySelector('#checkout-container')
     basketContainer .innerHTML = ''
     if (idStorage['basket'] == null){
-        basketContainer .innerHTML = '<h2 class="results">There are no items in your basket.</h2>'
+        basketContainer .innerHTML = '<h2 class="results">There are no animals in your basket.</h2>'
     }else if (basket.length === 0){
-        basketContainer .innerHTML = '<h2 class="results">There are no items in your basket.</h2>'
+        basketContainer .innerHTML = '<h2 class="results">There are no animals in your basket.</h2>'
     }else{
     basket.forEach(product => {
     basketContainer .innerHTML += `<div class = 'basketProduct'>
