@@ -12,6 +12,10 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
@@ -41,21 +45,20 @@
     <!-- Side Nav Bar  -->
     <nav id="sideNavbar">
         <div>
-          <ul class="sideNavbar-links">
-            <h1 class="heading">Helping Paws<i class="fas fa-paw"></i></h1>
-            <li class="sideNavbar-link"><a href="/index.html"><i class="fas fa-home home"></i></a></li>
-            <li class="sideNavbar-link"><a href="/templates/about.html"><i class="fas fa-info about"></i></a></li>
-            <li class="sideNavbar-link"><a href="/templates/preview.html"><i class="fas fa-paw"></i></a></li>
-            <li class="sideNavbar-link"><a href="/templates/contact.html"><i class="fas fa-phone contact"></i></a></li>
-            <li class="sideNavbar-link"><a href="/templates/sign-in.html"><i class="fas fa-sign-in-alt"></i></a></li>
-          </ul>
-         </div>
+            <ul class="sideNavbar-links">
+                <h1 class="heading">Helping Paws<i class="fas fa-paw"></i></h1>
+                <li class="sideNavbar-link"><a href="/index.html"><i class="fas fa-home home"></i></a></li>
+                <li class="sideNavbar-link"><a href="/templates/about.html"><i class="fas fa-info about"></i></a></li>
+                <li class="sideNavbar-link"><a href="/templates/preview.html"><i class="fas fa-paw"></i></a></li>
+                <li class="sideNavbar-link"><a href="/templates/contact.html"><i class="fas fa-phone contact"></i></a></li>
+                <li class="sideNavbar-link"><a href="/templates/sign-in.html"><i class="fas fa-sign-in-alt"></i></a></li>
+            </ul>
         </div>
       </nav>
     <!-- About Page -->
     <div id="about-page">
         <div class="about-content">
-            <h2>About Us</h2>
+            <h2 class="wow animate__animated animate__bounce">About Us</h2>
             <p>Helping Paws was founded in August 2021 with its main aim being able to rescue , aid as well as find loving and promising homes for those animals in need. Our organization has a goal to sterilize as many cats and dogs as possible in the Western Cape to ensure a better future for that animal. </p>
             <p>Helping Paws was founded by Mikayla Beelders, a young lady with a massive passion for helping animals. Helping Paws is controlled by the idea that every single animal deserves a better chance at life and thus resulting in our organization standing up for these animals to the best of our ability. </p>
             <p>Helping Paws’ mission is to educate pet owners to give their lovely pets the life that they deserve!</p>
@@ -66,7 +69,7 @@
         <div class="border"></div>
         <div class="partners-content">
             <div class="partners-words">
-                <h2>Our Partners</h2>
+                <h2 class="wow animate__animated animate__bounce">Our Partners</h2>
                 <p>Below are the logos of our sponsors:</p>
             </div>
             <div class="owl-carousel">
@@ -115,16 +118,17 @@
             <p>NPO-326 846 | NPC-2021/108776/08 | PB-6509 65398</p>
         </div>
     </footer>
-
-    <script>
-        AOS.init();
-      </script>
-      <script src="/scripts/navbar.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- External Scripts  -->
+    <script src="/scripts/navbar.js"></script>
     <script
       src="https://kit.fontawesome.com/76a522a414.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script>
+        new WOW().init();
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>

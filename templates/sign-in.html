@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,21 +45,21 @@
     <!-- Side Nav Bar  -->
     <nav id="sideNavbar">
         <div>
-          <ul class="sideNavbar-links">
-            <h1 class="heading">Helping Paws<i class="fas fa-paw"></i></h1>
-            <li class="sideNavbar-link"><a href="/index.html"><i class="fas fa-home home"></i></a></li>
-            <li class="sideNavbar-link"><a href="/templates/about.html"><i class="fas fa-info about"></i></a></li>
-            <li class="sideNavbar-link"><a href="/templates/preview.html"><i class="fas fa-paw paw"></i></a></li>
-            <li class="sideNavbar-link"><a href="/templates/contact.html"><i class="fas fa-phone contact"></i></a></li>
-            <li class="sideNavbar-link"><a href="/templates/sign-in.html"><i class="fas fa-sign-in-alt sign-in"></i></a></li>
-          </ul>
+            <ul class="sideNavbar-links">
+                <h1 class="heading">Helping Paws<i class="fas fa-paw"></i></h1>
+                <li class="sideNavbar-link"><a href="/index.html"><i class="fas fa-home home"></i></a></li>
+                <li class="sideNavbar-link"><a href="/templates/about.html"><i class="fas fa-info about"></i></a></li>
+                <li class="sideNavbar-link"><a href="/templates/preview.html"><i class="fas fa-paw paw"></i></a></li>
+                <li class="sideNavbar-link"><a href="/templates/contact.html"><i class="fas fa-phone contact"></i></a></li>
+                <li class="sideNavbar-link"><a href="/templates/sign-in.html"><i class="fas fa-sign-in-alt sign-in"></i></a></li>
+            </ul>
         </div>
     </nav>
     <!-- Sign in page  -->
     <div id="sign-in-page">
         <div class="loginPage">
             <div class="sign-in-heading">
-                <h2>Sign In</h2>
+                <h2 class="wow animate__animated animate__bounce">Sign In</h2>
                 <p>Please enter your valid credentials.</p>
             </div>
             <form id="form">
@@ -81,8 +85,8 @@
               </div>
                 <!-- Register and login buttons-->
                 <div class="buttons">
-                    <input class="button" type="submit" value="Login" ></input>
-                    <a href="/templates/register.html" class="register">Register</a>
+                    <input class="button wow animate__animated animate__fadeInBottomLeft" type="submit" value="Login" ></input>
+                    <a href="/templates/register.html" class="register wow animate__animated animate__fadeInBottomRight">Register</a>
                 </div>
                 <div class="admin-page">
                     <p>Are you an Admin user? <a href="/templates/admin-signIn.html"> Click Here</a></p>
@@ -116,13 +120,14 @@
             <p>NPO-326 846 | NPC-2021/108776/08 | PB-6509 65398</p>
         </div>
     </footer>
-
+    <!-- External Scripts  -->
     <script src="/scripts/navbar.js"></script>
     <script src="/scripts/login.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
     <script>
-        AOS.init();
-      </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      new WOW().init();
+        </script>
     <script
       src="https://kit.fontawesome.com/76a522a414.js"
       crossorigin="anonymous"

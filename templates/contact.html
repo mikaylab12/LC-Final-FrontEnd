@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
     <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,22 +45,21 @@
     <!-- Side Nav Bar  -->
     <nav id="sideNavbar">
       <div>
-        <ul class="sideNavbar-links">
-          <h1 class="heading">Helping Paws<i class="fas fa-paw"></i></h1>
-          <li class="sideNavbar-link"><a href="/index.html"><i class="fas fa-home home"></i></a></li>
-          <li class="sideNavbar-link"><a href="/templates/about.html"><i class="fas fa-info about"></i></a></li>
-          <li class="sideNavbar-link"><a href="/templates/preview.html"><i class="fas fa-paw"></i></a></li>
-          <li class="sideNavbar-link"><a href="/templates/contact.html"><i class="fas fa-phone contact"></i></a></li>
-          <li class="sideNavbar-link"><a href="/templates/sign-in.html"><i class="fas fa-sign-in-alt"></i></a></li>
-        </ul>
-       </div>
+          <ul class="sideNavbar-links">
+            <h1 class="heading">Helping Paws<i class="fas fa-paw"></i></h1>
+            <li class="sideNavbar-link"><a href="/index.html"><i class="fas fa-home home"></i></a></li>
+            <li class="sideNavbar-link"><a href="/templates/about.html"><i class="fas fa-info about"></i></a></li>
+            <li class="sideNavbar-link"><a href="/templates/preview.html"><i class="fas fa-paw"></i></a></li>
+            <li class="sideNavbar-link"><a href="/templates/contact.html"><i class="fas fa-phone contact"></i></a></li>
+            <li class="sideNavbar-link"><a href="/templates/sign-in.html"><i class="fas fa-sign-in-alt"></i></a></li>
+          </ul>
       </div>
     </nav>
     <!-- Contact Page  -->
     <div id="contact-page">
         <div class="contact-content">
             <div class="contact-heading">
-                <h2>Contact Us</h2>
+                <h2 class="wow animate__animated animate__bounce">Contact Us</h2>
                 <p>Please fill in the required details and we will contact you.</p>
             </div>
             <form 
@@ -106,7 +109,7 @@
                 ></textarea>
               </div>
               <div class="contactPage-group">
-                <input class="contactPage-button" type="submit" value="submit" style="color: #307473;"></input>
+                <input class="contactPage-button wow animate__animated animate__fadeInBottomLeft" type="submit" value="submit" style="color: #307473;"></input>
               </div>
             </form>
         </div>
@@ -129,23 +132,24 @@
           <a href="https://www.instagram.com/mikaylabeelders/" target="_blank"><i class="fab fa-instagram-square"></i>mikaylabeelders</a>
           <li><i class="fas fa-phone"></i>(+27)82 688 9551</li>
       </div>
-  </div>
-  <!-- Footer  -->
-  <footer id="footer">
-      <div class="footer-content">
-          <h5>Helping Paws <i class="fas fa-paw"></i><i class="far fa-copyright"></i> - Adopt, don't just shop</h5>
-          <p>NPO-326 846 | NPC-2021/108776/08 | PB-6509 65398</p>
-      </div>
-  </footer>
-
+    </div>
+    <!-- Footer  -->
+    <footer id="footer">
+        <div class="footer-content">
+            <h5>Helping Paws <i class="fas fa-paw"></i><i class="far fa-copyright"></i> - Adopt, don't just shop</h5>
+            <p>NPO-326 846 | NPC-2021/108776/08 | PB-6509 65398</p>
+        </div>
+    </footer>
+  <!-- External Scripts  -->
+  <script src="/scripts/navbar.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
   <script>
-      AOS.init();
-    </script>
-    <script src="/scripts/navbar.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script
-      src="https://kit.fontawesome.com/76a522a414.js"
-      crossorigin="anonymous"
-    ></script>
+      new WOW().init();
+      </script>
+  <script
+    src="https://kit.fontawesome.com/76a522a414.js"
+    crossorigin="anonymous"
+  ></script>
 </body>
 </html>

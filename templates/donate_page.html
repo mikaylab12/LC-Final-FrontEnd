@@ -12,6 +12,10 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
@@ -41,20 +45,20 @@
     <!-- Side Nav Bar  -->
     <nav id="sideNavbar">
         <div>
-          <ul class="sideNavbar-links">
-            <h1 class="heading">Helping Paws<i class="fas fa-paw"></i></h1>
-            <li class="sideNavbar-link"><a href="/templates/adopt_page.html"><i class="fas fa-heart heart"></i></a></li>
-            <li class="sideNavbar-link"><a href="/templates/foster_page.html"><i class="fas fa-clinic-medical medical"></i></a></li>
-            <li class="sideNavbar-link"><a href="/templates/donate_page.html"><i class="fas fa-donate donate donate"></i></a></li>
-            <li class="sideNavbar-link"><a href="/templates/basket.html"><i class="fas fa-shopping-basket basket"></i></a></li>
-            <li class="sideNavbar-link" onclick="signOut()"><a href="/index.html"><i class="fas fa-sign-out-alt sign-out sign-out"></i></a></li>
-          </ul>
+            <ul class="sideNavbar-links">
+                <h1 class="heading">Helping Paws<i class="fas fa-paw"></i></h1>
+                <li class="sideNavbar-link"><a href="/templates/adopt_page.html"><i class="fas fa-heart heart"></i></a></li>
+                <li class="sideNavbar-link"><a href="/templates/foster_page.html"><i class="fas fa-clinic-medical medical"></i></a></li>
+                <li class="sideNavbar-link"><a href="/templates/donate_page.html"><i class="fas fa-donate donate donate"></i></a></li>
+                <li class="sideNavbar-link"><a href="/templates/basket.html"><i class="fas fa-shopping-basket basket"></i></a></li>
+                <li class="sideNavbar-link" onclick="signOut()"><a href="/index.html"><i class="fas fa-sign-out-alt sign-out sign-out"></i></a></li>
+            </ul>
         </div>
     </nav>
     <!-- Donate Page  -->
     <div id="donate-page">
         <div class="donate-content">
-            <h2>Banking Details</h2>
+            <h2 class="wow animate__animated animate__bounce">Banking Details</h2>
             <h3>Helping Paws</h3>
             <p>Nedbank Bank</p>
             <p>Account Number: 170 123 456 78</p>
@@ -67,7 +71,7 @@
         <div class="border"></div>
         <div class="adopted-content">
             <div class="adopted-words">
-                <h2>Adopted Animals</h2>
+                <h2 class="wow animate__animated animate__bounce">Adopted Animals</h2>
                 <p>Below are the images of some of our friends that have already being adopted but not forgotten!</p>
             </div>
             <div class="owl-carousel">
@@ -131,13 +135,13 @@
             <p>NPO-326 846 | NPC-2021/108776/08 | PB-6509 65398</p>
         </div>
     </footer>
-
+    <!-- External Scripts  -->
     <script src="/scripts/navbar.js"></script>
     <script src="/scripts/sign-out.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
     <script>
-        AOS.init();
+        new WOW().init();
       </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       src="https://kit.fontawesome.com/76a522a414.js"
       crossorigin="anonymous"

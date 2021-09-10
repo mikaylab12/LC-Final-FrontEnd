@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
     <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,162 +26,162 @@
     <link rel="stylesheet" href="/stylesheets/admin-register.css">
 </head>
 <body>
-    <!-- Nav Bar -->
-    <nav id="navbar">
-        <div class="logo">
-            <h1>helping paws <i class="fas fa-paw"></i></h1>
-        </div>
-        <ul class="nav-links">
-            <li><a href="/index.html"><i class="fas fa-home home"></i></a></li>
-            <li><a href="/templates/about.html"><i class="fas fa-info about"></i></a></li>
-            <li><a href="/templates/preview.html"><i class="fas fa-paw"></i></a></li>
-            <li><a href="/templates/contact.html"><i class="fas fa-phone contact"></i></a></li>
-            <li><a href="/templates/sign-in.html"><i class="fas fa-sign-in-alt sign-in"></i></a></li>
-        </ul>
-        <button class="navbar-menu" onclick="toggleSideNavbar()">
-          <i class="fas fa-bars"></i>
-        </button>
-    </nav>
-    <!-- Side Nav Bar  -->
-    <nav id="sideNavbar">
-      <div>
-        <ul class="sideNavbar-links">
-          <h1 class="heading">Helping Paws<i class="fas fa-paw"></i></h1>
-          <li class="sideNavbar-link"><a href="/index.html"><i class="fas fa-home home"></i></a></li>
-          <li class="sideNavbar-link"><a href="/templates/about.html"><i class="fas fa-info about"></i></a></li>
-          <li class="sideNavbar-link"><a href="/templates/preview.html"><i class="fas fa-paw paw"></i></a></li>
-          <li class="sideNavbar-link"><a href="/templates/contact.html"><i class="fas fa-phone contact"></i></a></li>
-          <li class="sideNavbar-link"><a href="/templates/sign-in.html"><i class="fas fa-sign-in-alt sign-in"></i></a></li>
-        </ul>
+  <!-- Nav Bar -->
+  <nav id="navbar">
+      <div class="logo">
+          <h1>helping paws <i class="fas fa-paw"></i></h1>
       </div>
-    </nav>
-    <!-- Admin register page  -->
-    <div id="admin-register-page">
-        <div class="register-content">
-            <div class="register-heading">
-                <h2>Admin Registration</h2>
-                <p>Please enter your valid details.</p>
+      <ul class="nav-links">
+          <li><a href="/index.html"><i class="fas fa-home home"></i></a></li>
+          <li><a href="/templates/about.html"><i class="fas fa-info about"></i></a></li>
+          <li><a href="/templates/preview.html"><i class="fas fa-paw"></i></a></li>
+          <li><a href="/templates/contact.html"><i class="fas fa-phone contact"></i></a></li>
+          <li><a href="/templates/sign-in.html"><i class="fas fa-sign-in-alt sign-in"></i></a></li>
+      </ul>
+      <button class="navbar-menu" onclick="toggleSideNavbar()">
+        <i class="fas fa-bars"></i>
+      </button>
+  </nav>
+  <!-- Side Nav Bar  -->
+  <nav id="sideNavbar">
+    <div>
+      <ul class="sideNavbar-links">
+        <h1 class="heading">Helping Paws<i class="fas fa-paw"></i></h1>
+        <li class="sideNavbar-link"><a href="/index.html"><i class="fas fa-home home"></i></a></li>
+        <li class="sideNavbar-link"><a href="/templates/about.html"><i class="fas fa-info about"></i></a></li>
+        <li class="sideNavbar-link"><a href="/templates/preview.html"><i class="fas fa-paw paw"></i></a></li>
+        <li class="sideNavbar-link"><a href="/templates/contact.html"><i class="fas fa-phone contact"></i></a></li>
+        <li class="sideNavbar-link"><a href="/templates/sign-in.html"><i class="fas fa-sign-in-alt sign-in"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Admin register page  -->
+  <div id="admin-register-page">
+      <div class="register-content">
+          <div class="register-heading">
+              <h2 class="wow animate__animated animate__bounce">Admin Registration</h2>
+              <p>Please enter your valid details.</p>
+          </div>
+          <form id="form">
+              <!-- Input for admin ID -->
+            <div class="form-group">
+              <input
+                class="form-input"
+                type="text"
+                id="admin_id"
+                name="admin_id"
+                placeholder="ID number"
+              />
             </div>
-            <form id="form">
-                <!-- Input for admin ID -->
-              <div class="form-group">
-                <input
-                  class="form-input"
-                  type="text"
-                  id="admin_id"
-                  name="admin_id"
-                  placeholder="ID number"
-                />
+            <!-- Input for name -->
+            <div class="form-group">
+              <input
+                class="form-input"
+                type="text"
+                id="admin_name"
+                name="admin_name"
+                placeholder="Name"
+              />
+            </div>
+            <!-- Input for surname -->
+            <div class="form-group">
+              <input
+                class="form-input"
+                type="text"
+                id="admin_surname"
+                name="admin_surname"
+                placeholder="Surname"
+              />
+            </div>
+            <!-- Input for email -->
+            <div class="form-group">
+              <input
+                class="form-input"
+                type="text"
+                id="admin_email"
+                name="admin_email"
+                placeholder="Email"
+              />
+            </div>
+            <!-- Input for contact -->
+            <div class="form-group">
+              <input
+                class="form-input"
+                type="text"
+                id="admin_contact"
+                name="admin_contact"
+                placeholder="Contact"
+              />
+            </div>
+              <!-- Input for username -->
+            <div class="form-group">
+              <input
+                class="form-input"
+                type="text"
+                id="admin_username"
+                name="admin_username"
+                placeholder="Username"
+              />
+            </div>
+            <!-- Input for password -->
+            <div class="form-group">
+              <input
+                class="form-input"
+                type="password"
+                name="admin_password"
+                id="admin_password"
+                placeholder="Password"
+              />
+            </div>
+              <!-- back and login buttons-->
+              <div class="buttons">
+                  <a href="/templates/admin-signIn.html" class="login wow animate__animated animate__fadeInBottomLeft">Login</a>
+                  <input class="button wow animate__animated animate__fadeInBottomRight" type="submit" value="Register" ></input>
               </div>
-              <!-- Input for name -->
-              <div class="form-group">
-                <input
-                  class="form-input"
-                  type="text"
-                  id="admin_name"
-                  name="admin_name"
-                  placeholder="Name"
-                />
+              <div class="user-page">
+                  <p>Are you a regular user? <a href="/templates/sign-in.html">Click Here</a></p>
               </div>
-              <!-- Input for surname -->
-              <div class="form-group">
-                <input
-                  class="form-input"
-                  type="text"
-                  id="admin_surname"
-                  name="admin_surname"
-                  placeholder="Surname"
-                />
-              </div>
-              <!-- Input for email -->
-              <div class="form-group">
-                <input
-                  class="form-input"
-                  type="text"
-                  id="admin_email"
-                  name="admin_email"
-                  placeholder="Email"
-                />
-              </div>
-              <!-- Input for contact -->
-              <div class="form-group">
-                <input
-                  class="form-input"
-                  type="text"
-                  id="admin_contact"
-                  name="admin_contact"
-                  placeholder="Contact"
-                />
-              </div>
-                <!-- Input for username -->
-              <div class="form-group">
-                <input
-                  class="form-input"
-                  type="text"
-                  id="admin_username"
-                  name="admin_username"
-                  placeholder="Username"
-                />
-              </div>
-              <!-- Input for password -->
-              <div class="form-group">
-                <input
-                  class="form-input"
-                  type="password"
-                  name="admin_password"
-                  id="admin_password"
-                  placeholder="Password"
-                />
-              </div>
-                <!-- back and login buttons-->
-                <div class="buttons">
-                    <a href="/templates/admin-signIn.html" class="login">Login</a>
-                    <input class="button" type="submit" value="Register" ></input>
-                </div>
-                <div class="user-page">
-                    <p>Are you a regular user? <a href="/templates/sign-in.html">Click Here</a></p>
-                </div>
-            </form>
-        </div>
-    </div>
-    <!-- Bottom Navbar  -->
-    <div id="bottom-navbar">
-      <div class="bottom-navigation">
-          <h4>Navigation:</h4>
-          <ul class="bottom-links">
-              <li><a href="/index.html"><i class="fas fa-home home"></i>Home</a></li>
-              <li class="bottom_about"><a href="/templates/about.html"><i class="fas fa-info "></i>  About</a></li>
-              <li><a href="/templates/preview.html"><i class="fas fa-paw"></i>Animals</a></li>
-              <li><a href="/templates/contact.html"><i class="fas fa-phone"></i>Contact</a></li>
-              <li><a href="/templates/sign-in.html"><i class="fas fa-sign-in-alt"></i>Sign In</a></li>
-          </ul>
+          </form>
       </div>
-      <div class="bottom-social">
-          <h4>Contact:</h4>
-          <a href="mailto:mikayladummy2@gmail.com?"><i class="fas fa-envelope"></i>mikayladummy2@gmail.com</a>
-          <a href="https://www.instagram.com/mikaylabeelders/" target="_blank"><i class="fab fa-instagram-square"></i>mikaylabeelders</a>
-          <li><i class="fas fa-phone"></i>(+27)82 688 9551</li>
-      </div>
+  </div>
+  <!-- Bottom Navbar  -->
+  <div id="bottom-navbar">
+    <div class="bottom-navigation">
+        <h4>Navigation:</h4>
+        <ul class="bottom-links">
+            <li><a href="/index.html"><i class="fas fa-home home"></i>Home</a></li>
+            <li class="bottom_about"><a href="/templates/about.html"><i class="fas fa-info "></i>  About</a></li>
+            <li><a href="/templates/preview.html"><i class="fas fa-paw"></i>Animals</a></li>
+            <li><a href="/templates/contact.html"><i class="fas fa-phone"></i>Contact</a></li>
+            <li><a href="/templates/sign-in.html"><i class="fas fa-sign-in-alt"></i>Sign In</a></li>
+        </ul>
     </div>
-    <!-- Footer  -->
-    <footer id="footer">
-        <div class="footer-content">
-            <h5>Helping Paws <i class="fas fa-paw"></i><i class="far fa-copyright"></i> - Adopt, don't just shop</h5>
-            <p>NPO-326 846 | NPC-2021/108776/08 | PB-6509 65398</p>
-        </div>
-    </footer>
-
-    <script src="/scripts/navbar.js"></script>
-    <script src="/scripts/admin_register.js"></script>
-    <script>
-        AOS.init();
-      </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script
-      src="https://kit.fontawesome.com/76a522a414.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <div class="bottom-social">
+        <h4>Contact:</h4>
+        <a href="mailto:mikayladummy2@gmail.com?"><i class="fas fa-envelope"></i>mikayladummy2@gmail.com</a>
+        <a href="https://www.instagram.com/mikaylabeelders/" target="_blank"><i class="fab fa-instagram-square"></i>mikaylabeelders</a>
+        <li><i class="fas fa-phone"></i>(+27)82 688 9551</li>
+    </div>
+  </div>
+  <!-- Footer  -->
+  <footer id="footer">
+      <div class="footer-content">
+          <h5>Helping Paws <i class="fas fa-paw"></i><i class="far fa-copyright"></i> - Adopt, don't just shop</h5>
+          <p>NPO-326 846 | NPC-2021/108776/08 | PB-6509 65398</p>
+      </div>
+  </footer>
+  <!-- External Scripts  -->
+  <script src="/scripts/navbar.js"></script>
+  <script src="/scripts/admin_register.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+  <script>
+    new WOW().init();
+    </script>
+  <script
+    src="https://kit.fontawesome.com/76a522a414.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </body>
 </html>

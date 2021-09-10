@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,8 +22,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <title>Helping Paws Users</title>
     <link rel="stylesheet" href="/stylesheets/admin_users.css">
+    <title>Helping Paws Users</title>
 </head>
 <body>
     <!-- Nav Bar -->
@@ -55,15 +59,15 @@
     <div id="users-preview">
         <div class="usersPage">
             <div class="users-heading">
-                <h2>Regular Users</h2>
+                <h2 class="wow animate__animated animate__bounce">Regular Users</h2>
                 <p>Below is a preview of the users. </p>
             </div>
             <div class="search-bar">
                 <input type="text" id="search" placeholder="Search...">
                 <button class="search-button" onclick="searchUsers()" ><i class="fas fa-search"></i></button>
             </div>
-            <div id="users-container">
-
+            <div id="users-container" class="wow animate__animated animate__fadeIn">
+                <!-- Regular users go here  -->
             </div>
         </div>
     </div>
@@ -72,15 +76,15 @@
     <div id="admin-preview">
         <div class="adminPage">
             <div class="admin-heading">
-                <h2>Admin Users</h2>
+                <h2 class="wow animate__animated animate__bounce">Admin Users</h2>
                 <p>Below is a preview of the admin users. </p>
             </div>
             <div>
                 <input type="text" id="admin-search" placeholder="Search...">
                 <button class="admin-search-button" onclick="searchAdminUsers()" ><i class="fas fa-search"></i></button>
             </div>
-            <div id="admin-container">
-
+            <div id="admin-container" class="wow animate__animated animate__fadeIn">
+                <!-- Admin users go here  -->
             </div>
         </div>
     </div>
@@ -110,13 +114,13 @@
             <p>NPO-326 846 | NPC-2021/108776/08 | PB-6509 65398</p>
         </div>
     </footer>
-
+    <!-- External Scripts  -->
     <script src="/scripts/navbar.js"></script>
     <script src="/scripts/admin_users.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
     <script>
-        AOS.init();
+        new WOW().init();
       </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       src="https://kit.fontawesome.com/76a522a414.js"
       crossorigin="anonymous"

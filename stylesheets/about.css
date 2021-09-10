@@ -185,12 +185,49 @@
     /* margin-left: 24%; */
     /* justify-self: center; */
     background: #6DB2A2;
+    animation: change1 10s infinite;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 8.5px );
     -webkit-backdrop-filter: blur( 8.5px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     margin-bottom: 20px;
+}
+
+@keyframes change1 {
+    0% {
+        background-color: #619586;
+    }
+    10% {
+        background-color: #A9F0D1;
+    }
+    20% {
+        background-color: #A9F0D1;
+    }
+    30% {
+        background-color: #6DB2A2;
+    }
+    40% {
+        background-color: #6DB2A2;
+    }
+    50% {
+        background-color: #6DB2A2;
+    }
+    60% {
+        background-color: #307473;
+    }
+    70% {
+        background-color: #307473;
+    }
+    80% {
+        background-color: #183A3A;
+    }
+    90% {
+        background-color: #183A3A;
+    }
+    100% {
+        background-color: #619586;
+    }
 }
 
 .owl-stage {
