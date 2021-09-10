@@ -1016,7 +1016,7 @@ input::placeholder {
         width: 90%;
         height: 95%;
         z-index: 1;
-        margin-top: 2.5vh;
+        margin-top: 2vh;
     }
 
     .modal{
