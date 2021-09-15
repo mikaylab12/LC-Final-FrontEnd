@@ -13,6 +13,9 @@
     align-items: center;
     color: white;
     background: #A9F0D1;
+    position: fixed;
+    width: 100%;
+    z-index: 30;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 8.5px );
     -webkit-backdrop-filter: blur( 8.5px );
@@ -82,6 +85,11 @@
 }
 
 /* Adopt Page  */
+#adopt{
+    /* margin-top: 80px; */
+    padding-top: 70px;
+}
+
 #adopt-preview{
     /* background-image: url(/images/eotkTD.png);
     background-size: cover;
@@ -302,7 +310,7 @@
 /* bottom navbar */
 #bottom-navbar {
     background-color: #A9F0D1;
-    height: 35vh;
+    height: max-content;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -310,12 +318,12 @@
     font-family: monospace;
 }
 
-.bottom-navigation{
+/* .bottom-navigation{
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     /* justify-content: center;
-    align-items: flex-start; */
+    align-items: flex-start; 
     font-size: 22px;
     color: #6DB2A2;
 }
@@ -328,10 +336,10 @@
     /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; */
-}
+    align-items: center; 
+} */
 
-.bottom-navigation ul{
+/* .bottom-navigation ul{
     list-style-type: none;
     text-decoration: none;
 }
@@ -349,7 +357,7 @@
     color: #6DB2A2;
     display: flex;
     justify-content: flex-start;
-}
+} */
 
 .bottom-social{
     display: flex;
@@ -358,7 +366,8 @@
     align-items: flex-start;
     font-size: 22px;
     color: #6DB2A2;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .bottom-social i {
@@ -694,14 +703,14 @@
     
     .sideNavbar-links.active {
         top: 0;
-        right: 3%;
+        right: 0;
         z-index: 100;
     }
 
     /* bottom navbar */
     #bottom-navbar {
         background-color: #A9F0D1;
-        height: 30vh;
+        /* height: 30vh; */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -710,14 +719,14 @@
         font-family: monospace;
     }
     
-    .bottom-navigation{
+    /* .bottom-navigation{
         display: none;
     }
     
     .bottom-navigation ul{
         list-style-type: none;
         text-decoration: none;
-    }
+    } */
     
     .bottom-social{
         display: flex;

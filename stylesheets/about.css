@@ -12,6 +12,9 @@
     justify-content: space-between;
     align-items: center;
     color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 30;
     background: #A9F0D1;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 8.5px );
@@ -269,7 +272,7 @@
 /* bottom navbar */
 #bottom-navbar {
     background-color: #A9F0D1;
-    height: 35vh;
+    height: max-content;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -277,17 +280,17 @@
     font-family: monospace;
 }
 
-.bottom-navigation{
+/* .bottom-navigation{
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     /* justify-content: center;
-    align-items: flex-start; */
+    align-items: flex-start; 
     font-size: 22px;
     color: #6DB2A2;
-}
+} */
 
-.bottom-navigation i {
+/* .bottom-navigation i {
     color: #6DB2A2;
     padding: 5px 10px;
     margin-right: 15px;
@@ -295,20 +298,20 @@
     /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; */
+    align-items: center; 
 }
 
 .about , .about a{
     display: flex;
     justify-content: center;
-    /* margin-left: 7px;s */
+    /* margin-left: 7px;s 
 }
 
 .about a, .about li {
     margin-left: 15px;
-}
+} */
 
-.bottom-navigation ul{
+/* .bottom-navigation ul{
     list-style-type: none;
     text-decoration: none;
 }
@@ -326,7 +329,7 @@
     color: #6DB2A2;
     display: flex;
     justify-content: flex-start;
-}
+} */
 
 .bottom-social{
     display: flex;
@@ -335,7 +338,8 @@
     align-items: flex-start;
     font-size: 22px;
     color: #6DB2A2;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .bottom-social i {
@@ -407,6 +411,7 @@
     .about-content h2{
         padding: 10px 20px;
         font-size: 50px;
+        margin-top: 70px;
     }
 
     .about-content p {
@@ -649,14 +654,14 @@
     
     .sideNavbar-links.active {
         top: 0;
-        right: 3%;
+        right: 0;
         z-index: 100;
     }
 
     /* bottom navbar */
     #bottom-navbar {
         background-color: #A9F0D1;
-        height: 30vh;
+        /* height: 30vh; */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -665,18 +670,18 @@
         font-family: monospace;
     }
     
-    .bottom-navigation{
+    /* .bottom-navigation{
         display: none;
     }
     
     .bottom-navigation ul{
         list-style-type: none;
         text-decoration: none;
-    }
+    } */
     
     .bottom-social{
         display: flex;
-        margin-top: 0;
+        /* margin-top: 0; */
         /* flex-direction: column;
         justify-content: center;
         align-items: center; */
